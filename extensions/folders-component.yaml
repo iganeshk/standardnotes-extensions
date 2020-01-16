@@ -1,0 +1,13 @@
+---
+id: org.standardnotes.folders-component
+npm: sn-folders-component
+github: sn-extensions/folders-component
+main: index.html
+
+name: Folders Component
+content_type: SN|Component
+area: tags-list
+version: 1.3.3
+description: Create nested folders from your tags with easy drag and drop. Folders also supports Smart Tags, which allow you to build custom filters for viewing your notes.
+thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/components/folders.jpg
+...
