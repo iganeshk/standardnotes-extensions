@@ -1,0 +1,19 @@
+---
+id: org.standardnotes.theme-midnight
+npm: sn-theme-midnight
+github: sn-extensions/midnight-theme
+main: dist/dist.css
+
+name: Midnight
+content_type: SN|Theme
+version: 1.2.1
+marketing_url: https://standardnotes.org/extensions/midnight
+thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/themes/midnight-with-mobile.jpg
+description: Elegant utilitarianism.
+
+dock_icon:
+  type: circle
+  background_color: '#086DD6'
+  foreground_color: '#ffffff'
+  border_color: '#086DD6'
+...

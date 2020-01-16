@@ -1,0 +1,19 @@
+---
+id: org.standardnotes.theme-futura
+npm: sn-futura-theme
+github: sn-extensions/futura-theme
+main: dist/dist.css
+
+name: Futura
+content_type: SN|Theme
+version: 1.2.2
+marketing_url: https://standardnotes.org/extensions/futura
+thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/themes/futura-with-mobile.jpg
+description: Calm and relaxed. Take some time off.
+
+dock_icon:
+  type: circle
+  background_color: '#fca429'
+  foreground_color: '#ffffff'
+  border_color: '#fca429'
+...

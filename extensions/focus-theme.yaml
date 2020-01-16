@@ -1,0 +1,19 @@
+---
+id: org.standardnotes.theme-focus
+npm: sn-theme-focus
+github: sn-extensions/focus-theme
+main: dist/dist.css
+
+name: Focus
+content_type: SN|Theme
+version: 1.2.3
+marketing_url: https://standardnotes.org/extensions/focused
+thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/themes/focus-with-mobile.jpg
+description: For when you need to go in.
+
+dock_icon:
+  type: circle
+  background_color: '#a464c2'
+  foreground_color: '#ffffff'
+  border_color: '#a464c2'
+...

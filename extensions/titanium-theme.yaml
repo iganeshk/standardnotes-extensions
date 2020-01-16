@@ -1,0 +1,19 @@
+---
+id: org.standardnotes.theme-titanium
+npm: sn-theme-titanium
+github: sn-extensions/titanium-theme
+main: dist/dist.css
+
+name: Titanium
+content_type: SN|Theme
+version: 1.2.2
+marketing_url: https://standardnotes.org/extensions/titanium
+thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/themes/titanium-with-mobile.jpg
+description: Light on the eyes, heavy on the spirit.
+
+dock_icon:
+  type: circle
+  background_color: '#6e2b9e'
+  foreground_color: '#ffffff'
+  border_color: '#6e2b9e'
+...

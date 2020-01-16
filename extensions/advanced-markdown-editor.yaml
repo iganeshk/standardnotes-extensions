@@ -1,0 +1,15 @@
+---
+id: org.standardnotes.advanced-markdown-editor
+npm: sn-advanced-markdown-editor
+github: sn-extensions/advanced-markdown-editor
+main: index.html
+
+name: Advanced Markdown Editor
+content_type: SN|Component
+area: editor-editor
+version: 1.3.2
+marketing_url: https://standardnotes.org/extensions/advanced-markdown
+thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/editors/adv-markdown.jpg
+description: A fully featured Markdown editor that supports live preview, a styling toolbar, and split pane support.
+flags: []
+...

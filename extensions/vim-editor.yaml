@@ -1,0 +1,15 @@
+---
+id: org.standardnotes.vim-editor
+npm: sn-vim-editor
+github: sn-extensions/vim-editor
+main: index.html
+
+name: Vim Editor
+content_type: SN|Component
+area: editor-editor
+version: 1.3.2
+marketing_url: https://standardnotes.org/extensions/vim-editor
+thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/editors/vim.jpg
+description: A code editor with Vim key bindings.
+flags: []
+...

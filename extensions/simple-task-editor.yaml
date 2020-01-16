@@ -1,0 +1,15 @@
+---
+id: org.standardnotes.simple-task-editor
+npm: sn-simple-task-editor
+github: sn-extensions/simple-task-editor
+main: dist/index.html
+
+name: Simple Task Editor
+content_type: SN|Component
+area: editor-editor
+version: 1.3.3
+marketing_url: https://standardnotes.org/extensions/simple-task-editor
+thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/editors/task-editor.jpg
+description: A great way to manage short-term and long-term to-do's. You can mark tasks as completed, change their order, and edit the text naturally in place.
+flags: []
+...
