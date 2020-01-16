@@ -6,6 +6,7 @@ main: dist/dist.css
 
 name: Futura
 content_type: SN|Theme
+area: themes
 version: 1.2.2
 marketing_url: https://standardnotes.org/extensions/futura
 thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/themes/futura-with-mobile.jpg

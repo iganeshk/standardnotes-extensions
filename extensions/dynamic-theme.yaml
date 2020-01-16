@@ -7,6 +7,7 @@ main: dist/dist.css
 name: Dynamic
 layerable: true
 content_type: SN|Theme
+area: themes
 version: 1.0.0
 marketing_url: https://standardnotes.org/extensions/dynamic
 description: A smart theme that minimizes the tags and notes panels when they are not in use.

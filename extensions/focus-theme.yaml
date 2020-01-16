@@ -6,6 +6,7 @@ main: dist/dist.css
 
 name: Focus
 content_type: SN|Theme
+area: themes
 version: 1.2.3
 marketing_url: https://standardnotes.org/extensions/focused
 thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/themes/focus-with-mobile.jpg

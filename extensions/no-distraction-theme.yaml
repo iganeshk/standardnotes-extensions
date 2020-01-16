@@ -6,6 +6,7 @@ main: dist/dist.css
 
 name: No Distraction
 content_type: SN|Theme
+area: themes
 version: 1.2.2
 layerable: true
 marketing_url: https://standardnotes.org/extensions/no-distraction

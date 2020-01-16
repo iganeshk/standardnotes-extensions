@@ -6,6 +6,7 @@ main: dist/dist.css
 
 name: Solarized Dark
 content_type: SN|Theme
+area: themes
 version: 1.2.1
 marketing_url: https://standardnotes.org/extensions/solarized-dark
 thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/themes/solarized-dark.jpg

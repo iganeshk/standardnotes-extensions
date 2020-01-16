@@ -1,0 +1,18 @@
+---
+id: com.ceiphr.overcast
+github: ceiphr/sn-overcast-theme
+main: dist/dist.css
+
+name: Overcast
+content_type: SN|Theme
+area: themes
+version: 1.1.2
+description: Overcast to become cloudy or dark — just like this theme.
+marketing_url: https://github.com/ceiphr/sn-overcast-theme
+thumbnail_url: https://camo.githubusercontent.com/4ecbeeda63c4fa66b874e6860c0e2b2963eb752e/68747470733a2f2f63646e2e6365697068722e696f2f7374616e646172646e6f7465732f6f766572636173742f736e2d6f766572636173742d7468656d652d73637265656e73686f742e706e67
+dock_icon:
+  type: circle
+  background_color: "#039be5"
+  foreground_color: "#19181a"
+  border_color: "#039be5"
+...
