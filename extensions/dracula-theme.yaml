@@ -10,7 +10,7 @@ version: 1.2.1
 marketing_url: https://github.com/cameronldn/sn-theme-dracula
 thumbnail_url: https://raw.githubusercontent.com/cameronldn/sn-theme-dracula/master/preview.png
 description: A Dracula inspired theme for Standard Notes.
-
+statusBar: dark-content
 dock_icon:
   type: circle
   background_color: '#8be9fd'
