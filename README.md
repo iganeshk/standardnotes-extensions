@@ -1,7 +1,9 @@
 <img alt="LaMetric-System-Monitor" src="https://standardnotes.org/assets/icon.png"/>
 
 ## Standard Notes Extensions - Self-Hosted Repository
-Host Standard Notes extensions on your own server. This utility parses list of extensions configured in YAML from the `\extensions` directory, builds a repository JSON index which can be plugged directly into Standard Notes Web/Desktop Clients. (https://standardnotes.org/)
+Host Standard Notes extensions on your own server. This utility parses most of the open-source extensions available from original repository as well as other authors and builds a extensions repository which can be plugged directly into Standard Notes Web/Desktop Clients. (https://standardnotes.org/)
+
+Extensions are listed as YAML in the `\extensions` sub-directory, pull a request if you'd like to add yours.
 
 ### Requirements
 * Python 3
@@ -74,7 +76,8 @@ https://your-domain.com/extensions/index.json
 ```
 
 ### Acknowledgments
-This project was adapted from https://github.com/JokerQyou/snextensions to facilitate on-the-fly updating of extensions.
+* This project was adapted from https://github.com/JokerQyou/snextensions to facilitate on-the-fly updating of extensions.
+* Dracula Theme by https://github.com/cameronldn
 
 ### ToDo
 * Implement the usage of GitHub API for efficiency.
