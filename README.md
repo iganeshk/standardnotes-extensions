@@ -1,13 +1,14 @@
 <img alt="LaMetric-System-Monitor" src="https://standardnotes.org/assets/icon.png"/>
 
 ## Standard Notes Extensions - Self-Hosted Repository
-Host Standard Notes extensions on your own server. This utility parses most of the open-source extensions available from original repository as well as other authors and builds a extensions repository which can be plugged directly into Standard Notes Web/Desktop Clients. (https://standardnotes.org/)
+Host Standard Notes extensions on your own server. This utility parses most of the open-source extensions available from original repository as well as from other authors and builds an extensions repository which then can be plugged directly into Standard Notes Web/Desktop Clients. (https://standardnotes.org/)
 
 Extensions are listed as YAML in the `\extensions` sub-directory, pull a request if you'd like to add yours.
 
 ### Requirements
 * Python 3
-* Python 3 - pyyaml module
+	* pyyaml module
+	* requests module
 
 ### Usage
 
@@ -19,26 +20,42 @@ $ cd standardnotes-extensions
 $ pip3 install -r requirements.txt
 ```
 
-* Replace `your-domain.com` at the end of the `build-repo.py` file with your domain name:
+* Use the env.sample to create a .env file for your environment variables. The utility will automatically load these when it starts.
 
 ```
-main(os.getenv('URL', 'https://your-domain.com/extensions'))
+# Sample ENV setup Variables (YAML)
+# Copy this file and update as needed.
+#
+#   $ cp env.sample .env
+#
+# Do not include this new file in source control
+# Github Credentials
+# Generate your token here: https://github.com/settings/tokens
+# No additional permission required, this is just to avoid github api rate limits
+#
+
+domain: https://your-domain.com/extensions
+
+github:
+  username: USERNAME
+  token: TOKEN
+
 ```
 
-* [Optional] Make additions or appropriate changes in `/extensions` directory
+* [Optional] Make additions or appropriate changes in `/extensions` directory.
 * Run the utility:
 
 ```bash
 $ python3 build-repo.py
 ```
-* Server the `/public` directory and verify if the endpoint is reachable
+* Serve the `/public` directory and verify if the endpoint is reachable.
 
 ```
 https://your-domain.com/extensions/index.json
 ```
-* Import the above endpoint into the web/desktop client.
+* Import the above endpoint into the web/desktop client. (Note: Enable CORS for your web server respectively, nginx setup provided below)
 
-### Setup with nginx as reverse-proxy
+### Setup with nginx
 
 ```nginx
 	location ^~ /extensions {
@@ -80,4 +97,3 @@ https://your-domain.com/extensions/index.json
 * Dracula Theme by https://github.com/cameronldn
 
 ### ToDo
-* Implement the usage of GitHub API for efficiency.
