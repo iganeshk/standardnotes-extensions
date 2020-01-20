@@ -1,4 +1,4 @@
-<img alt="LaMetric-System-Monitor" src="https://standardnotes.org/assets/icon.png"/>
+<img alt="Standard Notes Extension" src="../assets/standardnotes.png?raw=true"/>
 
 ## Standard Notes Extensions - Self-Hosted Repository
 Host Standard Notes extensions on your own server. This utility parses most of the open-source extensions available from original repository as well as from other authors and builds an extensions repository which then can be plugged directly into Standard Notes Web/Desktop Clients. (https://standardnotes.org/)
