@@ -1,4 +1,4 @@
-<img alt="Standard Notes Extension" src="../assets/standardnotes.png?raw=true"/>
+![Standard Notes Extension Repository](../assets/standardnotes.png?raw=true)
 
 ## Standard Notes Extensions - Self-Hosted Repository
 Host Standard Notes extensions on your own server. This utility parses most of the open-source extensions available from original repository as well as from other authors and builds an extensions repository which then can be plugged directly into Standard Notes Web/Desktop Clients. (https://standardnotes.org/)
@@ -9,6 +9,10 @@ Extensions are listed as YAML in the `\extensions` sub-directory, pull a request
 * Python 3
 	* pyyaml module
 	* requests module
+
+### Demo
+
+![Standard Notes Extension Repository Demo](../assets/standardnotes_demo.gif?raw=true)
 
 ### Usage
 
@@ -93,7 +97,7 @@ https://your-domain.com/extensions/index.json
 ```
 
 ### Acknowledgments
-* This project was adapted from https://github.com/JokerQyou/snextensions to facilitate on-the-fly updating of extensions.
+* This project was adapted from https://github.com/JokerQyou/snextensions
 * Dracula Theme by https://github.com/cameronldn
 
 ### ToDo
