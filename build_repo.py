@@ -129,11 +129,18 @@ def parse_extensions(base_dir, base_url, ghub_session):
 
     extensions = []
     # Read and parse all extension info
-    for extfiles in sorted(os.listdir(extension_dir)):
-        if not extfiles.endswith('.yaml'):
-            continue
 
-        with open(os.path.join(extension_dir, extfiles)) as extyaml:
+    # for extfiles in sorted(os.listdir(extension_dir)):
+    #     if not extfiles.endswith('.yaml'):
+    #         continue
+
+    # Get all extensions, sort extensions alphabetically along by their by type
+    extfiles = [ x for x in sorted(os.listdir(extension_dir)) if not x.endswith('theme.yaml') and x.endswith('.yaml')]
+    themefiles = [ x for x in sorted(os.listdir(extension_dir)) if x.endswith('theme.yaml')]
+    extfiles.extend(themefiles)
+
+    for extfile in extfiles:
+        with open(os.path.join(extension_dir, extfile)) as extyaml:
             ext_yaml = yaml.load(extyaml, Loader=yaml.FullLoader)
         ext_has_update = False
         repo_name = ext_yaml['github'].split('/')[-1]
@@ -152,7 +159,7 @@ def parse_extensions(base_dir, base_url, ghub_session):
                 # No release's found
                 print(
                     "Error: Unable to update %s (%s) does it have a release at Github?"
-                    % (ext_yaml['name'], extfiles))
+                    % (ext_yaml['name'], extfile))
                 continue
             # Check if extension directory alredy exists
             if not os.path.exists(repo_dir):
@@ -205,12 +212,20 @@ def parse_extensions(base_dir, base_url, ghub_session):
             with open(os.path.join(public_dir, repo_name, 'index.json'),
                       'w') as ext_json:
                 json.dump(extension, ext_json, indent=4)
-            print('Extension: {:30s} {:6s}\t(updated)'.format(
-                ext_yaml['name'], ext_version))
+            if extfile.endswith("theme.yaml"):
+                print('Theme: {:30s} {:6s}\t(updated)'.format(
+                    ext_yaml['name'], ext_version))
+            else:
+                print('Extension: {:30s} {:6s}\t(updated)'.format(
+                    ext_yaml['name'], ext_version))
         else:
             # ext already up-to-date
-            print('Extension: {:30s} {:6s}\t(already up-to-date)'.format(
-                ext_yaml['name'], ext_version))
+            if extfile.endswith("theme.yaml"):
+                print('Theme: {:30s} {:6s}\t(already up-to-date)'.format(
+                    ext_yaml['name'], ext_version))
+            else:
+                print('Extension: {:30s} {:6s}\t(already up-to-date)'.format(
+                    ext_yaml['name'], ext_version))
 
         extensions.append(extension)
     os.chdir('..')
