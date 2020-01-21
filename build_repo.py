@@ -61,7 +61,7 @@ def process_zipball(repo_dir, release_version):
                         os.path.join(repo_dir, release_version, filename),
                         "wb")
                     shutil.copyfileobj(source, target)
-            except FileNotFoundError:
+            except (FileNotFoundError, IsADirectoryError):
                 # Create the directory
                 os.makedirs(
                     os.path.dirname(
@@ -129,7 +129,7 @@ def parse_extensions(base_dir, base_url, ghub_session):
 
     extensions = []
     # Read and parse all extension info
-    for extfiles in os.listdir(extension_dir):
+    for extfiles in sorted(os.listdir(extension_dir)):
         if not extfiles.endswith('.yaml'):
             continue
 
@@ -139,10 +139,9 @@ def parse_extensions(base_dir, base_url, ghub_session):
         repo_name = ext_yaml['github'].split('/')[-1]
         repo_dir = os.path.join(public_dir, repo_name)
 
-        # If we don't have a Github API Sesssion, using cloning repos instead
+        # If we don't have a Github API Sesssion, do git-clone instead
         if ghub_session is not None:
-            # Github API Method
-            # Get extension Github meta-data
+            # Get extension's github release meta-data
             ext_git_info = json.loads(
                 ghub_session.get(
                     'https://api.github.com/repos/{github}/releases/latest'.
@@ -150,6 +149,7 @@ def parse_extensions(base_dir, base_url, ghub_session):
             try:
                 ext_version = ext_git_info['tag_name']
             except KeyError:
+                # No release's found
                 print(
                     "Error: Unable to update %s (%s) does it have a release at Github?"
                     % (ext_yaml['name'], extfiles))
@@ -264,7 +264,7 @@ def main():
             "Environment variables not set (read env.sample). Using Git Clone method instead"
         )
         input(
-            "⚠️ This method in't that efficient, Press any key to continue:\n")
+            "⚠️ this is an in-efficient process, Press any key to continue:\n")
         parse_extensions(base_dir, base_url, None)
         sys.exit(0)
 
