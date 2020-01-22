@@ -17,7 +17,7 @@ Extensions are listed as YAML in the `\extensions` sub-directory, pull a request
 
 ### Usage
 
-* Fork this repository to the web-server:
+* Clone this repository to the web-server:
 
 ```bash
 $ git clone https://github.com/iganeshk/standardnotes-extensions.git

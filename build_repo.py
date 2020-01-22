@@ -235,7 +235,8 @@ def parse_extensions(base_dir, base_url, ghub_session):
             ext_json,
             indent=4,
         )
-    print("\nProcessed: {} extensions. (Components: {}, Themes: {})".format(len(extfiles), len(extfiles)-len(themefiles), len(themefiles)))
+    print("\nProcessed: {:20s}{} extensions. (Components: {}, Themes: {})".format("", len(extfiles), len(extfiles)-len(themefiles), len(themefiles)))
+    print("Repository Endpoint URL: {:6s}{}/index.json".format("", base_url))
 
 def main():
     """
