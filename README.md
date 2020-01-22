@@ -12,7 +12,7 @@ Extensions are listed as YAML in the `\extensions` sub-directory, pull a request
 
 ### Demo
 <p align="center">
-	<img alt="Standard Notes Extension Repository Demo" src="https://github.com/iganeshk/standardnotes-extensions/raw/assets/standardnotes_demo.gif" width="60%" />
+	<img alt="Standard Notes Extension Repository Demo" src="https://github.com/iganeshk/standardnotes-extensions/raw/assets/standardnotes_demo.gif" width="80%" />
 </p>
 
 ### Usage
