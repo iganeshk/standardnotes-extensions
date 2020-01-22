@@ -11,8 +11,9 @@ Extensions are listed as YAML in the `\extensions` sub-directory, pull a request
 	* requests module
 
 ### Demo
-
-![Standard Notes Extension Repository Demo](../assets/standardnotes_demo.gif?raw=true)
+<p align="center">
+	<img alt="Standard Notes Extension Repository Demo" src="https://github.com/iganeshk/standardnotes-extensions/raw/assets/standardnotes_demo.gif" width="60%" />
+</p>
 
 ### Usage
 
@@ -97,7 +98,7 @@ https://your-domain.com/extensions/index.json
 ```
 
 ### Acknowledgments
-* This project was adapted from https://github.com/JokerQyou/snextensions
-* Dracula Theme by https://github.com/cameronldn
+* This project was adapted originally from https://github.com/JokerQyou/snextensions
+* Check out https://github.com/jonhadfield/awesome-standard-notes for more Standard Notes stuff!
+* Authors of custom themes and extensions
 
-### ToDo

@@ -1,0 +1,13 @@
+---
+id: io.github.christianhans.sn-pure-black-theme
+github: christianhans/sn-pure-black-theme
+main: dist/dist.css
+
+name: Pure Black
+content_type: SN|Theme
+area: themes
+version: 1.0.9
+marketing_url: https://github.com/christianhans/sn-pure-black-theme
+thumbnail_url: https://raw.githubusercontent.com/christianhans/sn-pure-black-theme/master/preview1.png
+description: Theme optimized for Optimized for OLED devices such as iPhone X.
+...

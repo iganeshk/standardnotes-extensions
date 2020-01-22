@@ -30,8 +30,7 @@ def get_environment(base_dir):
         github:
           username:
           token:
-    """,
-                            Loader=yaml.FullLoader)
+    """, Loader=yaml.FullLoader)
     if os.path.isfile(os.path.join(base_dir, ".env")):
         with open(os.path.join(base_dir, ".env")) as temp_env_file:
             temp_envvar = yaml.load(temp_env_file, Loader=yaml.FullLoader)
@@ -128,14 +127,8 @@ def parse_extensions(base_dir, base_url, ghub_session):
     os.chdir(public_dir)
 
     extensions = []
-    # Read and parse all extension info
-
-    # for extfiles in sorted(os.listdir(extension_dir)):
-    #     if not extfiles.endswith('.yaml'):
-    #         continue
-
     # Get all extensions, sort extensions alphabetically along by their by type
-    extfiles = [ x for x in sorted(os.listdir(extension_dir)) if not x.endswith('theme.yaml') and x.endswith('.yaml')]
+    extfiles = [x for x in sorted(os.listdir(extension_dir)) if not x.endswith('theme.yaml') and x.endswith('.yaml')]
     themefiles = [ x for x in sorted(os.listdir(extension_dir)) if x.endswith('theme.yaml')]
     extfiles.extend(themefiles)
 
@@ -146,7 +139,7 @@ def parse_extensions(base_dir, base_url, ghub_session):
         repo_name = ext_yaml['github'].split('/')[-1]
         repo_dir = os.path.join(public_dir, repo_name)
 
-        # If we don't have a Github API Sesssion, do git-clone instead
+        # If we don't have a Github API Session, do git-clone instead
         if ghub_session is not None:
             # Get extension's github release meta-data
             ext_git_info = json.loads(
@@ -161,10 +154,10 @@ def parse_extensions(base_dir, base_url, ghub_session):
                     "Error: Unable to update %s (%s) does it have a release at Github?"
                     % (ext_yaml['name'], extfile))
                 continue
-            # Check if extension directory alredy exists
+            # Check if extension directory already exists
             if not os.path.exists(repo_dir):
                 os.makedirs(repo_dir)
-            # Check if extension with current release alredy exists
+            # Check if extension with current release already exists
             if not os.path.exists(os.path.join(repo_dir, ext_version)):
                 ext_has_update = True
                 os.makedirs(os.path.join(repo_dir, ext_version))
@@ -213,7 +206,7 @@ def parse_extensions(base_dir, base_url, ghub_session):
                       'w') as ext_json:
                 json.dump(extension, ext_json, indent=4)
             if extfile.endswith("theme.yaml"):
-                print('Theme: {:30s} {:6s}\t(updated)'.format(
+                print('Theme: {:34s} {:6s}\t(updated)'.format(
                     ext_yaml['name'], ext_version))
             else:
                 print('Extension: {:30s} {:6s}\t(updated)'.format(
@@ -221,7 +214,7 @@ def parse_extensions(base_dir, base_url, ghub_session):
         else:
             # ext already up-to-date
             if extfile.endswith("theme.yaml"):
-                print('Theme: {:30s} {:6s}\t(already up-to-date)'.format(
+                print('Theme: {:34s} {:6s}\t(already up-to-date)'.format(
                     ext_yaml['name'], ext_version))
             else:
                 print('Extension: {:30s} {:6s}\t(already up-to-date)'.format(
@@ -231,6 +224,7 @@ def parse_extensions(base_dir, base_url, ghub_session):
     os.chdir('..')
 
     # Generate the main repository index JSON
+    # https://domain.com/sub-domain/my-index.json
     with open(os.path.join(public_dir, 'index.json'), 'w') as ext_json:
         json.dump(
             dict(
@@ -241,7 +235,7 @@ def parse_extensions(base_dir, base_url, ghub_session):
             ext_json,
             indent=4,
         )
-
+    print("\nProcessed: {} extensions. (Components: {}, Themes: {})".format(len(extfiles), len(extfiles)-len(themefiles), len(themefiles)))
 
 def main():
     """
@@ -268,7 +262,7 @@ def main():
                 )
                 sys.exit(1)
         except Exception as e:
-            print("Unknown error occured: %s" % e)
+            print("Unknown error occurred: %s" % e)
         # Build extensions
         parse_extensions(base_dir, base_url, ghub_session)
         # Terminate Session
@@ -276,7 +270,7 @@ def main():
     else:
         # Environment file missing
         print(
-            "Environment variables not set (read env.sample). Using Git Clone method instead"
+            "Environment variables not set (have a look at env.sample). Using Git Clone method instead"
         )
         input(
             "⚠️ this is an in-efficient process, Press any key to continue:\n")
