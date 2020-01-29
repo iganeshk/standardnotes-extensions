@@ -129,7 +129,7 @@ def parse_extensions(base_dir, base_url, ghub_session):
     extensions = []
     # Get all extensions, sort extensions alphabetically along by their by type
     extfiles = [x for x in sorted(os.listdir(extension_dir)) if not x.endswith('theme.yaml') and x.endswith('.yaml')]
-    themefiles = [ x for x in sorted(os.listdir(extension_dir)) if x.endswith('theme.yaml')]
+    themefiles = [x for x in sorted(os.listdir(extension_dir)) if x.endswith('theme.yaml')]
     extfiles.extend(themefiles)
 
     for extfile in extfiles:
