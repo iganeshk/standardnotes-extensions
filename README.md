@@ -51,7 +51,7 @@ github:
 * Run the utility:
 
 ```bash
-$ python3 build-repo.py
+$ python3 build_repo.py
 ```
 * Serve the `/public` directory and verify if the endpoint is reachable.
 
