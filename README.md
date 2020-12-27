@@ -60,6 +60,25 @@ https://your-domain.com/extensions/index.json
 ```
 * Import the above endpoint into the web/desktop client. (Note: Enable CORS for your web server respectively, nginx setup provided below)
 
+### Docker
+
+* To via Docker, clone the repository, set up the .env file, and optionally modify the `extensions` directory, following the instructions above.
+* Next, build the container:
+
+```bash
+$ docker build -t standardnotes-extensions .
+```
+
+* Then run the container, specifying the mount points for the `.env` file, the `extensions` directory, and the `public` directory, where the output will be placed:
+
+```bash
+$ docker run \
+  -v $PWD/.env:/build/.env \
+  -v $PWD/extensions:/build/extensions \
+  -v $PWD/public:/build/public \
+  standardnotes-extensions
+```
+
 ### Setup with nginx
 
 ```nginx
