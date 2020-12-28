@@ -79,6 +79,36 @@ $ docker run \
   standardnotes-extensions
 ```
 
+#### Docker Compose
+
+If you would like to use the container with docker-compose, the exact setup will be somewhat specific to your configuration, however the following snippet may be helpful, assuming you have cloned this repository in your `$HOME` directory and followed the instructions regarding the .env file and `extensions` directory:
+
+```yaml
+version: '3.3'
+services:
+  nginx:
+  ...
+    volumes:
+    - standardnotes-extensions:/usr/share/nginx/html
+
+  standardnotes-extensions:
+    build:
+      context: $HOME/standardnotes-extensions/
+    restart: "no"
+    volumes:
+      - $HOME/standardnotes-extensions/.env:/build/.env
+      - $HOME/standardnotes-extensions/extensions:/build/extensions
+      - standardnotes-extensions:/build/public
+
+volumes:
+  standardnotes-extensions:
+    name: standardnotes-extensions
+```
+
+This snippet will handle the building of the extension creation-container, and place the result in the `standardnotes-extensions` volume, which can then be mounted in the nginx container so that it can be served as demonstrated in the instructions below.
+
+Please note that the confiuration snippet above is in no way a complete setup: you will still have to configure the nginx container and set up the syncing server containers.
+
 ### Setup with nginx
 
 ```nginx
