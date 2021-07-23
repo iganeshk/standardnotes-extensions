@@ -2,7 +2,7 @@
 id: org.standardnotes.plus-editor
 npm: sn-plus-editor
 github: sn-extensions/plus-editor
-main: index.html
+main: dist/index.html
 
 name: Plus Editor
 content_type: SN|Component
