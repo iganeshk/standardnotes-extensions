@@ -6,7 +6,7 @@ main: dist/dist.css
 name: VS Code Theme
 content_type: SN|Theme
 area: themes
-version: 1.0.16
+version: 1.0.17
 marketing_url: https://github.com/hyphone/sn-theme-vscode
 thumbnail_url: https://github.com/hyphone/sn-theme-vscode/raw/master/screenshot.png
 description: A theme for Standard Notes inspired by the VS Code Dark theme.
