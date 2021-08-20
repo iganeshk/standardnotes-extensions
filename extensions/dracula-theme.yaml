@@ -10,6 +10,7 @@ version: 0.0.17
 marketing_url: https://github.com/dracula/standard-notes
 thumbnail_url: https://cdn.jsdelivr.net/gh/dracula/standard-notes/preview.png
 description: A Dracula inspired theme for Standard Notes.
+
 statusBar: dark-content
 dock_icon:
   type: circle
