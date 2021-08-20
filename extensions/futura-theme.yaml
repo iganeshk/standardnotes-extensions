@@ -12,6 +12,7 @@ marketing_url: https://standardnotes.org/extensions/futura
 thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/themes/futura-with-mobile.jpg
 description: Calm and relaxed. Take some time off.
 
+statusBar: dark-content
 dock_icon:
   type: circle
   background_color: '#fca429'
