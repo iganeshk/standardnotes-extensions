@@ -10,6 +10,7 @@ version: 1.1
 marketing_url: https://github.com/jakecza/dark-hybrid-theme-sn
 thumbnail_url: https://raw.githubusercontent.com/jakecza/dark-hybrid-theme-sn/master/preview.png
 description: Dark hybrid theme for Standard Notes.
+
 statusBar: dark-content
 dock_icon:
   type: circle
