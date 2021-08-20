@@ -13,7 +13,7 @@ description: Dark hybrid theme for Standard Notes.
 statusBar: dark-content
 dock_icon:
   type: circle
-  background_color: '#2D2D2D'
-  foreground_color: '#8be9fd'
+  background_color: '#726a7b'
+  foreground_color: '#ffffff'
   border_color: '#726a7b'
 ...
