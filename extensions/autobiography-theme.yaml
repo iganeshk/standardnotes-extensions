@@ -1,7 +1,7 @@
 ---
 id: org.standardnotes.theme-autobiography
 npm: sn-theme-autobiography
-github: sn-extensions/autobiography-theme
+github: standardnotes/autobiography-theme
 main: dist/dist.css
 
 name: Autobiography
