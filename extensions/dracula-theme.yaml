@@ -1,19 +1,19 @@
 ---
-id: dev.cldn.sn-theme-dracula
-github: cameronldn/sn-theme-dracula
+id: ml.xnor.sn-theme-dracula
+github: dracula/standard-notes
 main: dist/dist.css
 
 name: Dracula
 content_type: SN|Theme
 area: themes
-version: 1.2.1
-marketing_url: https://github.com/cameronldn/sn-theme-dracula
-thumbnail_url: https://raw.githubusercontent.com/cameronldn/sn-theme-dracula/master/preview.png
+version: 0.0.17
+marketing_url: https://github.com/dracula/standard-notes
+thumbnail_url: https://cdn.jsdelivr.net/gh/dracula/standard-notes/preview.png
 description: A Dracula inspired theme for Standard Notes.
 statusBar: dark-content
 dock_icon:
   type: circle
-  background_color: '#6272a4'
-  foreground_color: '#ffffff'
-  border_color: '#6272a4'
+  background_color: '#bd93f9'
+  foreground_color: '#bd93f9'
+  border_color: '#bd93f9'
 ...
