@@ -1,0 +1,14 @@
+---
+id: org.standardnotes.filesafe-embed
+npm: filesafe-embed
+github: standardnotes/filesafe-embed
+main: dist/index.html
+
+name: Filesafe Embed
+content_type: SN|Component
+area: editor-stack
+version: 1.0.10
+marketing_url: https://standardnotes.com/filesafe
+thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/FileSafe-banner.png
+description: The reusable UI library that is part of the larger FileSafe system.
+...
