@@ -10,6 +10,7 @@ version: v2.2.0
 marketing_url: https://github.com/yithian/slate-theme
 thumbnail_url: https://github.com/yithian/slate-theme/raw/main/images/sn-screenshot.png
 description: A theme with shady grey and mossy green highlights.
+
 statusBar: dark-content
 dock_icon:
   type: circle
