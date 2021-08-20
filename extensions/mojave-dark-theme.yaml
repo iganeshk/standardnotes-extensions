@@ -10,6 +10,7 @@ version: 0.0.3
 marketing_url: https://github.com/matthew-cox/sn-theme-mojave-dark-mode
 thumbnail_url: https://github.com/matthew-cox/sn-theme-mojave-dark-mode/raw/master/preview.png
 description: Standard Notes theme which roughly matches Mojave Dark Mode..
+
 statusBar: dark-content
 dock_icon:
   type: circle
