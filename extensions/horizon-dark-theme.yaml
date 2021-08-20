@@ -1,6 +1,6 @@
 ---
 id: org.github.shouhu21.sn-theme-horizon-dark
-github: ilindaniel/sn-theme-evernote-dark
+github: shouhu21/sn-theme-horizon-dark
 main: dist/dist.css
 
 name: Horizon Dark
