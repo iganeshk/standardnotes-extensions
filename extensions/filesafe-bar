@@ -1,0 +1,14 @@
+---
+id: org.standardnotes.filesafe-bar
+npm: filesafe-bar
+github: standardnotes/filesafe-bar
+main: dist/index.html
+
+name: Filesafe Bar
+content_type: SN|Component
+area: editor-stack
+version: 2.0.10
+marketing_url: https://standardnotes.com/filesafe
+thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/FileSafe-banner.png
+description: Attach files to your notes and have them automatically encrypted and uploaded to your Dropbox, Google Drive, WebDAV server, or AWS S3.
+...
