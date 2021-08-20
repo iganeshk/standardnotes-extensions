@@ -13,7 +13,7 @@ description: A Dracula inspired theme for Standard Notes.
 statusBar: dark-content
 dock_icon:
   type: circle
-  background_color: '#8be9fd'
-  foreground_color: '#8be9fd'
-  border_color: '#8be9fd'
+  background_color: '#6272a4'
+  foreground_color: '#ffffff'
+  border_color: '#6272a4'
 ...
