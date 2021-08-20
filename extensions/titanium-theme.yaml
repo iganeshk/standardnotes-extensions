@@ -1,7 +1,7 @@
 ---
 id: org.standardnotes.theme-titanium
 npm: sn-theme-titanium
-github: sn-extensions/titanium-theme
+github: standardnotes/titanium-theme
 main: dist/dist.css
 
 name: Titanium
