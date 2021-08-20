@@ -10,6 +10,7 @@ version: 1.2.0
 description: Overcast to become cloudy or dark — just like this theme.
 marketing_url: https://github.com/ceiphr/sn-overcast-theme
 thumbnail_url: https://i.imgur.com/KDnyBGx.png
+statusBar: dark-content
 dock_icon:
   type: circle
   background_color: "#039be5"
