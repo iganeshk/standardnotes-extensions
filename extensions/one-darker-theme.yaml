@@ -10,6 +10,7 @@ version: 0.2.1
 marketing_url: https://github.com/eenpadvinder/standardnotes-theme-one-darker
 thumbnail_url: https://raw.githubusercontent.com/eenpadvinder/standardnotes-theme-one-darker/master/preview.png
 description: VS Code One Dark Darker theme for Standard Notes.
+
 statusBar: dark-content
 dock_icon:
   type: circle
