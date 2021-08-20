@@ -1,7 +1,7 @@
 ---
 id: org.standardnotes.theme-solarized-dark
 npm: sn-theme-solarized-dark
-github: sn-extensions/solarized-dark-theme
+github: standardnotes/solarized-dark-theme
 main: dist/dist.css
 
 name: Solarized Dark
