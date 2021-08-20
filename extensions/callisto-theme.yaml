@@ -10,6 +10,7 @@ version: 0.0.1
 marketing_url: https://github.com/Lissy93/callisto-theme-standard-notes
 thumbnail_url: https://i.ibb.co/PGTCTT1/sn-callisto-screenshot-1.png
 description: Dusty background with teal accents.
+
 statusBar: dark-content
 dock_icon:
   type: circle
