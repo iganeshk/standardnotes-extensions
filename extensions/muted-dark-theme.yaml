@@ -6,8 +6,14 @@ main: dist/dist.css
 name: Muted Dark
 content_type: SN|Theme
 area: themes
-version: 1.0.7
+version: 1.0.9
 marketing_url: https://github.com/ntran/sn-theme-muteddark
 thumbnail_url: https://raw.githubusercontent.com/ntran/sn-theme-muteddark/master/thumbnail.png
 description: A dark theme with muted colors for Standard Notes
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#1e1e1e'
+  foreground_color: '#1e1e1e'
+  border_color: '#127766'
 ...
