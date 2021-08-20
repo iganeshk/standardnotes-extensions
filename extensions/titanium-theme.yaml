@@ -12,6 +12,7 @@ marketing_url: https://standardnotes.org/extensions/titanium
 thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/themes/titanium-with-mobile.jpg
 description: Light on the eyes, heavy on the spirit.
 
+statusBar: dark-content
 dock_icon:
   type: circle
   background_color: '#6e2b9e'
