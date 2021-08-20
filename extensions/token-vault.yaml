@@ -1,14 +1,14 @@
 ---
 id: org.standardnotes.token-vault
 npm: sn-token-vault
-github: sn-extensions/token-vault
+github: standardnotes/token-vault
 main: dist/index.html
 
 name: TokenVault
 content_type: SN|Component
 area: editor-editor
-version: 1.0.4
+version: 2.0.1
 thumbnail_url: https://standard-notes.s3.amazonaws.com/screenshots/models/editors/token-vault.png
 description: Encrypt and protect your 2FA secrets for all your internet accounts. TokenVault handles your 2FA secrets so that you never lose them again, or have to start over when you get a new device.
-flags: [Beta]
+flags: []
 ...
