@@ -9,6 +9,7 @@ version: 0.0.2
 marketing_url: https://github.com/lzambarda/sn-nord-theme
 thumbnail_url: https://raw.githubusercontent.com/lzambarda/sn-nord-theme/master/preview.png
 description: Standard Notes theme inspired by the magnificent Nord Theme.
+
 statusBar: dark-content
 dock_icon:
   type: circle
