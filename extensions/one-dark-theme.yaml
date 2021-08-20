@@ -10,6 +10,7 @@ version: 1.3.3
 marketing_url: https://github.com/matta9001/sn-onedark
 thumbnail_url: https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/logo-small-d5c157accc541ade5c6ee158addb33d55e5095aeeb7b8029a50d6d7519d7d2f6.png
 description: Atom one dark background colors for Standard Notes.
+
 statusBar: dark-content
 dock_icon:
   type: circle
