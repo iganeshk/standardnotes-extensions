@@ -1,7 +1,7 @@
 ---
 id: io.github.alecstein.less-distraction
 github: alecstein/sn-less-distraction
-main: src/main.css
+main: dist/dist.css
 
 name: Less Distraction
 content_type: SN|Theme
