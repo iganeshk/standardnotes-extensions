@@ -14,7 +14,7 @@ description: A theme for focusing on your writing.
 statusBar: dark-content
 dock_icon:
   type: circle
-  background_color: '#000000'
-  foreground_color: '#000000'
-  border_color: '##000000'
+  background_color: '#FFFFFF'
+  foreground_color: '#FFFFFF'
+  border_color: '#FFFFFF'
 ...
