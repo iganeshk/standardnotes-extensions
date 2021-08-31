@@ -1,0 +1,15 @@
+---
+id: com.github.arturolinares.sn-rme
+npm: sn-advanced-markdown-editor
+github: arturolinares/sn-rme
+main: build/index.html
+
+name: Rich Markdown Editor
+content_type: SN|Component
+area: editor-editor
+version: 0.18.0
+marketing_url: https://github.com/arturolinares/sn-rme
+thumbnail_url: https://github.com/arturolinares/sn-rme/raw/master/build/logo512.png
+description: A WYSIWYG Markdown editor that supports youtube embeds.
+flags: []
+...
