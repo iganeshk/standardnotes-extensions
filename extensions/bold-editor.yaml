@@ -1,13 +1,13 @@
 ---
 id: org.standardnotes.bold-editor
 npm: sn-bold-editor
-github: sn-extensions/bold-editor
+github: standardnotes/bold-editor
 main: dist/index.html
 
 name: Bold Editor
 content_type: SN|Component
 area: editor-editor
-version: 1.0.5
+version: 1.2.1
 marketing_url: 
 thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/editors/bold.jpg
 description: A simple and peaceful rich editor that helps you write and think clearly. Features FileSafe integration, so you can embed your encrypted images, videos, and audio recordings directly inline.

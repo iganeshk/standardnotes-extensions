@@ -1,13 +1,13 @@
 ---
 id: org.standardnotes.simple-markdown-editor
 npm: sn-simple-markdown-editor
-github: sn-extensions/markdown-basic
+github: standardnotes/markdown-basic
 main: dist/index.html
 
 name: Simple Markdown Editor
 content_type: SN|Component
 area: editor-editor
-version: 1.3.6
+version: 1.4.0
 marketing_url: https://standardnotes.org/extensions/simple-markdown-editor
 thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/editors/simple-markdown.jpg
 description: A Markdown editor with dynamic split-pane preview.
