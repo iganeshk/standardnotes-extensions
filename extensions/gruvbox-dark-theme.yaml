@@ -1,0 +1,20 @@
+---
+id: io.github.christianhans.sn-gruvbox-dark-theme
+github: christianhans/sn-gruvbox-dark-theme
+main: dist/dist.css
+
+name: Gruvbox Dark Theme
+content_type: SN|Theme
+area: themes
+version: 0.0.16
+marketing_url: https://github.com/christianhans/sn-gruvbox-dark-theme
+thumbnail_url: https://raw.githubusercontent.com/christianhans/sn-gruvbox-dark-theme/master/preview.png
+description: Standard Notes theme based on colors from the gruvbox theme for Vim.
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#D79921'
+  foreground_color: '#076678'
+  border_color: '#D79921'
+...

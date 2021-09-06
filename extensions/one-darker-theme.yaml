@@ -1,0 +1,20 @@
+---
+id: io.github.eenpadvinder.standardnotes-theme-one-darker
+github: eenpadvinder/standardnotes-theme-one-darker
+main: dist/dist.css
+
+name: One Dark Darker
+content_type: SN|Theme
+area: themes
+version: 0.2.1
+marketing_url: https://github.com/eenpadvinder/standardnotes-theme-one-darker
+thumbnail_url: https://raw.githubusercontent.com/eenpadvinder/standardnotes-theme-one-darker/master/preview.png
+description: VS Code One Dark Darker theme for Standard Notes.
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#181a1f'
+  foreground_color: '#181a1f'
+  border_color: '#d55fde'
+...

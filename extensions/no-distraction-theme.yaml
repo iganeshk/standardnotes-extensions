@@ -1,7 +1,7 @@
 ---
 id: org.standardnotes.theme-no-distraction
 npm: sn-theme-no-distraction
-github: sn-extensions/no-distraction-theme
+github: standardnotes/no-distraction-theme
 main: dist/dist.css
 
 name: No Distraction

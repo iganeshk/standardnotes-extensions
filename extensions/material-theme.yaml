@@ -1,0 +1,19 @@
+---
+id: com.vantezzen.material-theme
+github: vantezzen/sn-theme-material
+main: src/main.css
+
+name: Material Theme
+content_type: SN|Theme
+area: themes
+version: 1.0.0
+marketing_url: https://github.com/vantezzen/sn-theme-material
+thumbnail_url: https://raw.githubusercontent.com/vantezzen/sn-theme-material/master/screenshot.png
+description: Material Theme for Standard Notes.
+
+dock_icon:
+  type: circle
+  background_color: '#263238'
+  foreground_color: '#FFFFFF'
+  border_color: '#263238'
+...
