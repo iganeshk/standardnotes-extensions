@@ -1,0 +1,20 @@
+---
+id: io.github.ilindaniel.sn-theme-evernote-dark
+github: ilindaniel/sn-theme-evernote-dark
+main: dist/dist.css
+
+name: Evernote-style Dark Theme
+content_type: SN|Theme
+area: themes
+version: v1.2
+marketing_url: https://github.com/ilindaniel/sn-theme-evernote-dark
+thumbnail_url: https://raw.githubusercontent.com/ilindaniel/sn-theme-evernote-dark/master/preview.png
+description: Evernote inspired dark theme for Standard Notes.
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#00a82e'
+  foreground_color: '#0081c2'
+  border_color: '#00a82e'
+...

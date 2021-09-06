@@ -1,0 +1,20 @@
+---
+id: io.github.alecstein.sn-pencil-theme
+github: alecstein/sn-pencil-theme
+main: dist/dist.css
+
+name: Pencil
+content_type: SN|Theme
+area: themes
+version: 0.1.0
+marketing_url: https://github.com/alecstein/sn-pencil-theme
+thumbnail_url: https://raw.githubusercontent.com/alecstein/sn-less-distraction/master/screenshot.png
+description: A dark, writing-oriented theme.
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#AE422F'
+  foreground_color: '#000000'
+  border_color: '#AE422F'
+...

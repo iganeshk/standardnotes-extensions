@@ -1,0 +1,20 @@
+---
+id: io.shompoe.sn-tangerine-theme
+github: shompoe/sn-tangerine-theme
+main: dist/dist.css
+
+name: Tangerine Theme
+content_type: SN|Theme
+area: themes
+version: 2.0.3
+marketing_url: https://github.com/shompoe/sn-tangerine-theme
+thumbnail_url: https://raw.githubusercontent.com/shompoe/sn-tangerine-theme/master/preview.png
+description: Theme based on the Gruvbox Dark Theme with more orange highlights.
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#D79921'
+  foreground_color: '#076678'
+  border_color: '#D79921'
+...

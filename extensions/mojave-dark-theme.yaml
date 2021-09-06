@@ -1,0 +1,20 @@
+---
+id: io.github.matthew-cox.mojave-dark-mode
+github: matthew-cox/sn-theme-mojave-dark-mode
+main: dist/mojave-dark-mode.css
+
+name: Mojave Dark Mode
+content_type: SN|Theme
+area: themes
+version: 0.0.3
+marketing_url: https://github.com/matthew-cox/sn-theme-mojave-dark-mode
+thumbnail_url: https://github.com/matthew-cox/sn-theme-mojave-dark-mode/raw/master/preview.png
+description: Standard Notes theme which roughly matches Mojave Dark Mode..
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#585858'
+  foreground_color: '#ffffff'
+  border_color: '#585858'
+...

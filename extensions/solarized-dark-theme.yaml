@@ -1,7 +1,7 @@
 ---
 id: org.standardnotes.theme-solarized-dark
 npm: sn-theme-solarized-dark
-github: sn-extensions/solarized-dark-theme
+github: standardnotes/solarized-dark-theme
 main: dist/dist.css
 
 name: Solarized Dark
@@ -12,6 +12,7 @@ marketing_url: https://standardnotes.org/extensions/solarized-dark
 thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/themes/solarized-dark.jpg
 description: The perfect theme for any time.
 
+statusBar: dark-content
 dock_icon:
   type: circle
   background_color: '#2AA198'
