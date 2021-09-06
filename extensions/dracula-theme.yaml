@@ -8,7 +8,7 @@ content_type: SN|Theme
 area: themes
 version: 0.0.17
 marketing_url: https://github.com/dracula/standard-notes
-thumbnail_url: https://cdn.jsdelivr.net/gh/dracula/standard-notes/preview.png
+thumbnail_url: https://raw.githubusercontent.com/dracula/standard-notes/master/screenshot.png
 description: A Dracula inspired theme for Standard Notes.
 
 statusBar: dark-content
