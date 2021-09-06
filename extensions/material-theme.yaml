@@ -8,7 +8,7 @@ content_type: SN|Theme
 area: themes
 version: 1.0.0
 marketing_url: https://github.com/vantezzen/sn-theme-material
-thumbnail_url: https://cdn.jsdelivr.net/gh/vantezzen/sn-theme-material/screenshot.png
+thumbnail_url: https://raw.githubusercontent.com/vantezzen/sn-theme-material/master/screenshot.png
 description: Material Theme for Standard Notes.
 
 dock_icon:
