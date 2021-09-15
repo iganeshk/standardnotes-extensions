@@ -1,12 +1,13 @@
 ---
-id: sn-theme-callisto
+id: com.aliciasykes.aht-theme
+npm: sn-theme-callisto
 github: Lissy93/callisto-theme-standard-notes
 main: main.css
 
 name: Callisto
 content_type: SN|Theme
 area: themes
-version: 0.1.0
+version: 1.0.0
 marketing_url: https://github.com/Lissy93/callisto-theme-standard-notes
 thumbnail_url: https://i.ibb.co/PGTCTT1/sn-callisto-screenshot-1.png
 description: Dusty background with teal accents.
