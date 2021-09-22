@@ -6,9 +6,9 @@ main: dist/dist.css
 name: Pencil Theme
 content_type: SN|Theme
 area: themes
-version: 1.0.0
+version: 1.0.1
 marketing_url: https://github.com/xthursdayx/sn-pencil-theme
-thumbnail_url: https://raw.githubusercontent.com/alecstein/sn-less-distraction/master/screenshot.png
+thumbnail_url: https://raw.githubusercontent.com/xthursdayx/sn-less-distraction/master/screenshot.png
 description: A dark, writing-oriented theme.
 
 statusBar: dark-content
