@@ -6,7 +6,7 @@ main: dist/dist.css
 name: VS Code Theme
 content_type: SN|Theme
 area: themes
-version: 1.0.17
+version: 1.0.18
 marketing_url: https://github.com/xthursdayx/sn-theme-vscode
 thumbnail_url: https://raw.githubusercontent.com/xthursdayx/sn-theme-vscode/master/screenshot.png
 description: A theme for Standard Notes inspired by the VS Code Dark theme.
