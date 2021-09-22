@@ -1,0 +1,19 @@
+---
+id: io.github.xthursdayx.sn-material-theme
+github: xthursdayx/sn-theme-material
+main: dist/main.css
+
+name: Material Theme
+content_type: SN|Theme
+area: themes
+version: 1.0.0
+marketing_url: https://github.com/xthursdayx/sn-theme-material
+thumbnail_url: https://raw.githubusercontent.com/xthursdayx/sn-theme-material/master/screenshot.png
+description: Material Theme for Standard Notes.
+
+dock_icon:
+  type: circle
+  background_color: '#263238'
+  foreground_color: '#FFFFFF'
+  border_color: '#263238'
+...
