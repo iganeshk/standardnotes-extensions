@@ -1,0 +1,20 @@
+---
+id: io.github.xthursdayx.less-distraction
+github: xthursdayx/sn-less-distraction
+main: dist/dist.css
+
+name: Less Distraction
+content_type: SN|Theme
+area: themes
+version: 1.2.3
+marketing_url: https://github.com/xthursdayx/sn-less-distraction
+thumbnail_url: https://raw.githubusercontent.com/xthursdayx/sn-less-distraction/master/screenshot.png
+description: A theme for focusing on your writing.
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#FFFFFF'
+  foreground_color: '#FFFFFF'
+  border_color: '#FFFFFF'
+...
