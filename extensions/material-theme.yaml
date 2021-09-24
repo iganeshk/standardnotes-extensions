@@ -1,7 +1,7 @@
 ---
 id: io.github.xthursdayx.sn-material-theme
 github: xthursdayx/sn-theme-material
-main: dist/main.css
+main: dist/dist.css
 
 name: Material Theme
 content_type: SN|Theme
