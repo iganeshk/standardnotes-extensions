@@ -1,5 +1,5 @@
- ---
-id: com.github.dark-hybrid-theme-sn
+---
+id: io.github.dark-hybrid-theme-sn
 github: jakecza/dark-hybrid-theme-sn
 main: dist/dist.css
 
