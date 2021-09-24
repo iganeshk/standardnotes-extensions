@@ -6,7 +6,7 @@ main: dist/dist.css
 name: Less Distraction
 content_type: SN|Theme
 area: themes
-version: 1.2.3
+version: 1.2.4
 marketing_url: https://github.com/xthursdayx/sn-less-distraction
 thumbnail_url: https://raw.githubusercontent.com/xthursdayx/sn-less-distraction/master/screenshot.png
 description: A theme for focusing on your writing.
