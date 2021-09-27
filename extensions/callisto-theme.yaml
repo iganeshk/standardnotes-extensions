@@ -1,14 +1,13 @@
----
-id: io.github.xthursdayx.sn-callisto-theme
-github: xthursdayx/callisto-theme-standard-notes
+id: io.github.Lissy93.sn-callisto-theme
+github: Lissy93/callisto-theme-standard-notes
 main: dist/dist.css
 
 name: Callisto
 content_type: SN|Theme
 area: themes
-version: 1.0.1
-marketing_url: https://github.com/xthursdayx/callisto-theme-standard-notes
-thumbnail_url: https://raw.githubusercontent.com/xthursdayx/callisto-theme-standard-notes/master/screenshot1.png
+version: 1.0.3
+marketing_url: https://github.com/Lissy93/callisto-theme-standard-notes
+thumbnail_url: https://raw.githubusercontent.com/Lissy93/callisto-theme-standard-notes/master/screenshot1.png
 description: Dusty background with teal accents.
 
 statusBar: dark-content
