@@ -1,0 +1,19 @@
+---
+id: tech.gunderson.sn-theme-subtle-light
+github: Parkertg/sn-theme-subtle-light
+main: main.css
+
+name: Subtle Light
+content_type: SN|Theme
+area: themes
+version: 1.0
+marketing_url: https://github.com/Parkertg/sn-theme-subtle-light
+thumbnail_url: https://raw.githubusercontent.com/Parkertg/sn-theme-subtle-light/main/preview.png
+description: A lower saturation/contrast light theme for Standard Notes.
+
+dock_icon:
+  type: circle
+  background_color: '#edddc4'
+  foreground_color: '#ffffff'
+  border_color: '#ffffff'
+...

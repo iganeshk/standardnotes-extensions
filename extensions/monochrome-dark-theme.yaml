@@ -1,0 +1,20 @@
+---
+id: tech.gunderson.sn-theme-monochrome-dark
+github: Parkertg/sn-theme-monochrome-dark
+main: main.css
+
+name: Monochrome Dark
+content_type: SN|Theme
+area: themes
+version: 1.2
+marketing_url: https://github.com/Parkertg/sn-theme-monochrome-dark
+thumbnail_url: https://raw.githubusercontent.com/Parkertg/sn-theme-monochrome-dark/main/preview.png
+description: A near-monochrome dark theme for Standard Notes.
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#adadad'
+  foreground_color: '#ffffff'
+  border_color: '#ffffff'
+...
