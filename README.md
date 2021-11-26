@@ -86,7 +86,7 @@ services:
     - standardnotes-extensions:/usr/share/nginx/html
 
   standardnotes-extensions:
-    image: mtoohey/standardnotes-extensions
+    image: iganesh/standardnotes-extensions
     restart: "no"
     volumes:
       - $HOME/standardnotes-extensions/.env:/build/.env
