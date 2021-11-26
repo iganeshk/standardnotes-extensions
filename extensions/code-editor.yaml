@@ -11,4 +11,5 @@ version: 1.3.8
 marketing_url: https://standardnotes.org/extensions/code-editor
 thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/editors/code.jpg
 description: Syntax highlighting and convenient keyboard shortcuts for over 120 programming languages. Ideal for code snippets and procedures.
+flags: []
 ...

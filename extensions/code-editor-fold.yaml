@@ -1,0 +1,14 @@
+---
+id: org.matt-anderson.code-editor-fold
+github: matta9001/code-editor-fold
+main: index.html
+
+name: Code Editor Fold
+content_type: SN|Component
+area: editor-editor
+version: 1.0.0
+marketing_url: https://github.com/matta9001/code-editor-fold
+thumbnail_url: https://raw.githubusercontent.com/matta9001/code-editor-fold/main/code_editor_preview.png
+description: A fork of the official code editor which includes header and code folding.
+flags: []
+...

@@ -9,4 +9,7 @@ content_type: SN|Component
 area: modal
 version: 1.2.5
 description: Configure two-factor authentication to add an extra level of security to your account.
+no_expire: true
+deletion_warning: Deleting 2FA Manager will not disable 2FA from your account. To disable 2FA, first open 2FA Manager, then follow the prompts.
+flags: []
 ...

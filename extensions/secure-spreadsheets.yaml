@@ -7,7 +7,7 @@ main: dist/index.html
 name: Secure Spreadsheets
 content_type: SN|Component
 area: editor-editor
-version: 1.4.0
+version: 1.4.2
 marketing_url: 
 thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/editors/spreadsheets.png
 description: A powerful spreadsheet editor with formatting and formula support. Not recommended for large data sets, as encryption of such data may decrease editor performance.
