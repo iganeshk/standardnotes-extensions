@@ -1,21 +1,13 @@
 ---
-id: org.xthursdayx.sn-ia-writer-quattro
+id: io.xthursdayx.sn-ia-writer-quattro
 github: xthursdayx/sn-ia-writer-quattro
 main: dist/theme.css
 
 name: SN iA Writer Quattro
 content_type: SN|Theme
 area: themes
-version: 1.0.4e
+version: 1.0.5
 marketing_url: https://github.com/xthursdayx/sn-ia-writer-quattro
-thumbnail_url: https://i.ibb.co/PGTCTT1/sn-callisto-screenshot-1.png
 description: Replace all monospace and sans-serif fonts with iA Writer Quattro.
 layerable: true
-
-statusBar: dark-content
-dock_icon:
-  type: circle
-  background_color: '#0b1021'
-  foreground_color: '#d6085a'
-  border_color: '#1EE3B5'
 ...

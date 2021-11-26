@@ -11,6 +11,7 @@ marketing_url: https://github.com/xthursdayx/sn-theme-material
 thumbnail_url: https://raw.githubusercontent.com/xthursdayx/sn-theme-material/master/screenshot.png
 description: Material Theme for Standard Notes.
 
+statusBar: dark-content
 dock_icon:
   type: circle
   background_color: '#263238'

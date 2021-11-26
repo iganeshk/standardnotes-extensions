@@ -9,7 +9,7 @@ area: themes
 version: 1.0.4
 marketing_url: https://github.com/xthursdayx/uniform-dark-theme-sn/
 thumbnail_url: https://github.com/xthursdayx/uniform-dark-theme-sn/blob/master/Images/preview.png
-description:Theme inspired by Visual Studio Code's default dark theme, designed for Standard Notes. It is loosely based off my other theme that unifies VS Code's default dark theme.
+description: Theme inspired by Visual Studio Code's default dark theme, designed for Standard Notes. It is loosely based off my other theme that unifies VS Code's default dark theme.
 
 statusBar: dark-content
 dock_icon:
