@@ -107,7 +107,10 @@ Also, please note that the configuration snippet above is in no way a complete s
 If you need to build the container, clone this repository, `cd` into it, and run the following command:
 
 ```bash
-$ docker build -t standardnotes-extensions .
+$ docker build \
+  --no-cache \
+  --pull \
+  -t standardnotes-extensions .
 ```
 
 ### Setup with nginx
