@@ -7,7 +7,7 @@ main: dist/dist.css
 name: Titanium
 content_type: SN|Theme
 area: themes
-version: 1.2.2
+version: 1.2.4
 marketing_url: https://standardnotes.org/extensions/titanium
 thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/themes/titanium-with-mobile.jpg
 description: Light on the eyes, heavy on the spirit.

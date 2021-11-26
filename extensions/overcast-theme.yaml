@@ -6,10 +6,10 @@ main: dist/dist.css
 name: Overcast
 content_type: SN|Theme
 area: themes
-version: 1.2.0
-description: Overcast to become cloudy or dark — just like this theme.
+version: 1.2.2
 marketing_url: https://github.com/ceiphr/sn-overcast-theme
-thumbnail_url: https://i.imgur.com/KDnyBGx.png
+thumbnail_url: https://raw.githubusercontent.com/ceiphr/sn-overcast-theme/master/overcast.png
+description: Overcast to become cloudy or dark — just like this theme.
 
 statusBar: dark-content
 dock_icon:

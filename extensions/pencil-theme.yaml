@@ -1,14 +1,13 @@
 ---
-id: io.github.alecstein.sn-pencil-theme
-github: alecstein/sn-pencil-theme
+id: io.github.xthursdayx.sn-pencil-theme
+github: xthursdayx/sn-pencil-theme
 main: dist/dist.css
 
-name: Pencil
+name: Pencil Theme
 content_type: SN|Theme
 area: themes
-version: 0.1.0
-marketing_url: https://github.com/alecstein/sn-pencil-theme
-thumbnail_url: https://raw.githubusercontent.com/alecstein/sn-less-distraction/master/screenshot.png
+version: 1.0.3
+marketing_url: https://github.com/xthursdayx/sn-pencil-theme
 description: A dark, writing-oriented theme.
 
 statusBar: dark-content

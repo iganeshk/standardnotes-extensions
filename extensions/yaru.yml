@@ -1,0 +1,20 @@
+---
+id: io.ceiphr.yaru
+github: ceiphr/sn-yaru-theme
+main: dist/dist.css
+
+name: Yaru
+content_type: SN|Theme
+area: themes
+version: 1.0.7
+marketing_url: https://github.com/ceiphr/sn-yaru-theme
+thumbnail_url: https://raw.githubusercontent.com/ceiphr/sn-yaru-theme/master/yaru.png
+description: This is an unofficial Yaru theme for Standard Notes.
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#df4a16'
+  foreground_color: '#ffffff'
+  border_color: '#df4a16'
+...
