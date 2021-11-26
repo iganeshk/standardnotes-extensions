@@ -60,6 +60,56 @@ https://your-domain.com/extensions/index.json
 ```
 * Import the above endpoint into the web/desktop client. (Note: Enable CORS for your web server respectively, nginx setup provided below)
 
+### Docker
+
+* To via Docker, clone the repository, set up the .env file, and optionally modify the `extensions` directory, following the instructions above.
+* Then pull and run run the container, specifying the mount points for the `.env` file, the `extensions` directory, and the `public` directory, where the output will be placed:
+
+```bash
+$ docker run \
+  -v $PWD/.env:/build/.env \
+  -v $PWD/extensions:/build/extensions \
+  -v $PWD/public:/build/public \
+  mtoohey/standardnotes-extensions
+```
+
+#### Docker Compose
+
+If you would like to use the container with docker-compose, the exact setup will be somewhat specific to your configuration, however the following snippet may be helpful, assuming you have cloned this repository in your `$HOME` directory and followed the instructions regarding the .env file and `extensions` directory:
+
+```yaml
+version: '3.3'
+services:
+  nginx:
+  ...
+    volumes:
+    - standardnotes-extensions:/usr/share/nginx/html
+
+  standardnotes-extensions:
+    image: mtoohey/standardnotes-extensions
+    restart: "no"
+    volumes:
+      - $HOME/standardnotes-extensions/.env:/build/.env
+      - $HOME/standardnotes-extensions/extensions:/build/extensions
+      - standardnotes-extensions:/build/public
+
+volumes:
+  standardnotes-extensions:
+    name: standardnotes-extensions
+```
+
+This snippet will handle the building of the extension creation-container, and place the result in the `standardnotes-extensions` volume, which can then be mounted in the nginx container so that it can be served as demonstrated in the instructions below. Note that it's necessary to include the `restart: "no"` flag, because the container is designed to stop after it has finished generating the extensions.
+
+Also, please note that the configuration snippet above is in no way a complete setup: you will still have to configure the nginx container and set up the syncing server containers.
+
+### Docker Build
+
+If you need to build the container, clone this repository, `cd` into it, and run the following command:
+
+```bash
+$ docker build -t standardnotes-extensions .
+```
+
 ### Setup with nginx
 
 ```nginx

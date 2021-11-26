@@ -1,0 +1,20 @@
+---
+id: org.github.shouhu21.sn-theme-horizon-dark
+github: shouhu21/sn-theme-horizon-dark
+main: dist/dist.css
+
+name: Horizon Dark
+content_type: SN|Theme
+area: themes
+version: 1.0.0
+marketing_url: https://github.com/shouhu21/sn-theme-horizon-dark
+thumbnail_url: https://github.com/shouhu21/sn-theme-horizon-dark/blob/main/preview.png
+description: Standard Notes theme based on colors from the Horizon theme for VSCode.
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#1a1c23'
+  foreground_color: '#fdf0ed'
+  border_color: '#1a1c23'
+...

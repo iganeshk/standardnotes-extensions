@@ -1,7 +1,7 @@
 ---
 id: org.standardnotes.theme-focus
 npm: sn-theme-focus
-github: sn-extensions/focus-theme
+github: standardnotes/focus-theme
 main: dist/dist.css
 
 name: Focus

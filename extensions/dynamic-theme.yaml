@@ -1,7 +1,7 @@
 ---
 id: org.standardnotes.theme-dynamic
 npm: sn-theme-dynamic
-github: sn-extensions/dynamic-theme
+github: standardnotes/dynamic-theme
 main: dist/dist.css
 
 name: Dynamic

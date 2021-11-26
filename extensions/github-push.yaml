@@ -1,13 +1,13 @@
 ---
 id: org.standardnotes.github-push
 npm: sn-github-push
-github: sn-extensions/github-push
+github: standardnotes/github-push
 main: index.html
 
 name: GitHub Push
 content_type: SN|Component
 area: editor-stack
-version: 1.2.1
+version: 1.2.4
 marketing_url: https://standardnotes.org/extensions/github-push
 thumbnail_url: https://s3.amazonaws.com/standard-notes/screenshots/models/components/github-push.jpg
 description: Push note changes to a public or private GitHub repository, with options for file extension and commit message.

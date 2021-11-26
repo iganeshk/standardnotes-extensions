@@ -1,0 +1,19 @@
+id: io.github.lzambarda.sn-nord-theme
+github: lzambarda/sn-nord-theme
+main: theme.css
+
+name: Nord Theme
+content_type: SN|Theme
+area: themes
+version: 0.0.2
+marketing_url: https://github.com/lzambarda/sn-nord-theme
+thumbnail_url: https://raw.githubusercontent.com/lzambarda/sn-nord-theme/master/preview.png
+description: Standard Notes theme inspired by the magnificent Nord Theme.
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#5e81ac'
+  foreground_color: '#eceff4'
+  border_color: '#5e81ac'
+...
