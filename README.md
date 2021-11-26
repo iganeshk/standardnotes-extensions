@@ -70,7 +70,7 @@ $ docker run \
   -v $PWD/.env:/build/.env \
   -v $PWD/extensions:/build/extensions \
   -v $PWD/public:/build/public \
-  mtoohey/standardnotes-extensions
+  iganesh/standardnotes-extensions
 ```
 
 #### Docker Compose
