@@ -1,0 +1,20 @@
+---
+id: com.github.dark-hybrid-theme-sn
+github: jakecza/dark-hybrid-theme-sn
+main: dist/dist.css
+
+name: Dark Hybrid
+content_type: SN|Theme
+area: themes
+version: 1.1
+marketing_url: https://github.com/jakecza/dark-hybrid-theme-sn
+thumbnail_url: https://raw.githubusercontent.com/jakecza/dark-hybrid-theme-sn/master/preview.png
+description: Dark hybrid theme for Standard Notes.
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#726a7b'
+  foreground_color: '#ffffff'
+  border_color: '#726a7b'
+...
