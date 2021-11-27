@@ -1,0 +1,20 @@
+---
+id: io.github.Lissy93.sn-callisto-theme
+github: Lissy93/callisto-theme-standard-notes
+main: dist/dist.css
+
+name: Callisto
+content_type: SN|Theme
+area: themes
+version: 1.0.3
+marketing_url: https://github.com/Lissy93/callisto-theme-standard-notes
+thumbnail_url: https://raw.githubusercontent.com/Lissy93/callisto-theme-standard-notes/master/screenshot1.png
+description: Dusty background with teal accents.
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#0b1021'
+  foreground_color: '#d6085a'
+  border_color: '#1EE3B5'
+...

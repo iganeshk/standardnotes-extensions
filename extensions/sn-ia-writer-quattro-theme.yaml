@@ -1,0 +1,13 @@
+---
+id: io.xthursdayx.sn-ia-writer-quattro
+github: xthursdayx/sn-ia-writer-quattro
+main: dist/theme.css
+
+name: SN iA Writer Quattro
+content_type: SN|Theme
+area: themes
+version: 1.0.5
+marketing_url: https://github.com/xthursdayx/sn-ia-writer-quattro
+description: Replace all monospace and sans-serif fonts with iA Writer Quattro.
+layerable: true
+...
