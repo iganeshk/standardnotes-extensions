@@ -6,7 +6,7 @@ main: dist/dist.css
 name: Standard Gray
 content_type: SN|Theme
 area: themes
-version: 1.0.1
+version: 1.03
 marketing_url: https://github.com/hkp2k/sn-theme-grey-scale
 description: Standard gray (and blue) theme for Standard Notes.
 
