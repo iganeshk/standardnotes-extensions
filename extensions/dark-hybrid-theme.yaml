@@ -6,7 +6,7 @@ main: dist/dist.css
 name: Dark Hybrid
 content_type: SN|Theme
 area: themes
-version: v1.2
+version: v1.2_rc0
 marketing_url: https://github.com/tonyping/dark-hybrid-theme-sn
 thumbnail_url: https://raw.githubusercontent.com/tonyping/dark-hybrid-theme-sn/master/preview.png
 description: Dark Hybrid Theme Extension for Standard Notes.
