@@ -1,0 +1,20 @@
+---
+id: tech.gunderson.sn-theme-subtle-dark
+github: Parkertg/sn-theme-subtle-dark
+main: main.css
+
+name: Subtle Light
+content_type: SN|Theme
+area: themes
+version: 1.1
+marketing_url: https://github.com/Parkertg/sn-theme-subtle-dark
+thumbnail_url: https://raw.githubusercontent.com/Parkertg/sn-theme-subtle-dark/main/preview.png
+description: A low saturation orangish dark theme for Standard Notes.
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#897860'
+  foreground_color: '#c9d5d5'
+  border_color: '#897860'
+...

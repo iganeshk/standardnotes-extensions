@@ -1,0 +1,19 @@
+---
+id: io.github.mjfakler.sn-macos-dark-theme
+github: mjfakler/sn-macos-dark-theme
+main: dist/dist.css
+
+name: macOS Dark Theme
+content_type: SN|Theme
+area: themes
+version: 1.0.3
+marketing_url: https://github.com/mjfakler/sn-macos-dark-theme
+description: macOS Dark Mode theme for Standard Notes.
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#3a3a3c'
+  foreground_color: '#FAFBFF'
+  border_color: '#2c2c2e'
+...

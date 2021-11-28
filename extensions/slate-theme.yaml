@@ -1,6 +1,6 @@
 ---
 id: space.yuggoth.sn-slate-theme
-github: yithian/slate-theme/
+github: yithian/slate-theme
 main: dist/standard-notes.css
 
 name: Slate
