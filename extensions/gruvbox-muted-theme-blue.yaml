@@ -6,7 +6,7 @@ main: blue/dist/dist.css
 name: Gruvbox Muted Theme Blue
 content_type: SN|Theme
 area: themes
-version: v0.0.01
+version: 0.0.01
 marketing_url: https://github.com/bithooks/sn-gruvbox-muted-theme/
 thumbnail_url: https://raw.githubusercontent.com/bithooks/sn-gruvbox-muted-theme/main/blue/blue-screenshot.png
 description: Gruvbox Blue Muted Theme for Standard Notes.
