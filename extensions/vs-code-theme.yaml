@@ -1,16 +1,15 @@
 ---
-id: io.github.xthursdayx.sn-theme-vscode
-github: xthursdayx/sn-theme-vscode
-main: dist/dist.css
+id: io.github.hyphone.sn-theme-vscode
+github: hyphone/sn-theme-vscode
+main: dist.css
 
 name: VS Code Theme
 content_type: SN|Theme
 area: themes
-version: 1.1.11
-marketing_url: https://github.com/xthursdayx/sn-theme-vscode
-thumbnail_url: https://raw.githubusercontent.com/xthursdayx/sn-theme-vscode/master/screenshot.png
+version: 1.0.30
+marketing_url: https://github.com/hyphone/sn-theme-vscode
+thumbnail_url: https://github.com/hyphone/sn-theme-vscode/raw/master/screenshot.png
 description: A theme for Standard Notes inspired by the VS Code Dark theme.
-
 statusBar: dark-content
 dock_icon:
   type: circle
