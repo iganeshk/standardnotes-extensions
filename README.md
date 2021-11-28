@@ -70,7 +70,7 @@ $ docker run \
   -v $PWD/.env:/build/.env \
   -v $PWD/extensions:/build/extensions \
   -v $PWD/public:/build/public \
-  mtoohey/standardnotes-extensions
+  iganesh/standardnotes-extensions
 ```
 
 #### Docker Compose
@@ -86,7 +86,7 @@ services:
     - standardnotes-extensions:/usr/share/nginx/html
 
   standardnotes-extensions:
-    image: mtoohey/standardnotes-extensions
+    image: iganesh/standardnotes-extensions
     restart: "no"
     volumes:
       - $HOME/standardnotes-extensions/.env:/build/.env
