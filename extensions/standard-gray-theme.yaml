@@ -1,0 +1,19 @@
+---
+id: io.github.ithinkmatt.sn-standard-gray
+github: ithinkmatt/sn-standard-gray
+main: dist/dist.css
+
+name: Standard Gray
+content_type: SN|Theme
+area: themes
+version: 1.0.1
+marketing_url: https://github.com/hkp2k/sn-theme-grey-scale
+description: Standard gray (and blue) theme for Standard Notes.
+
+statusBar: grey-scale
+dock_icon:
+  type: circle
+  background_color: '#0053bd'
+  foreground_color: '#3d3c40'
+  border_color: '#c9cccf'
+...

@@ -1,0 +1,19 @@
+---
+id: io.github.hkp2k.sn-theme-grey-scale
+github: hkp2k/sn-theme-grey-scale
+main: main.css
+
+name: Grey Scale
+content_type: SN|Theme
+area: themes
+version: 1.0.16
+marketing_url: https://github.com/hkp2k/sn-theme-grey-scale
+description: Grey Scale theme for Standard Notes.
+
+statusBar: grey-scale
+dock_icon:
+  type: circle
+  background_color: '#2f2f2f'
+  foreground_color: '#404040'
+  border_color: '#2f2f2f'
+...
