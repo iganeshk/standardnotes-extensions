@@ -1,5 +1,5 @@
 ---
-id: org.standardnotes.action-bar
+id: io.github.xthursdayx.action-bar
 npm: sn-action-bar
 github: standardnotes/action-bar
 main: index.html
