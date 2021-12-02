@@ -123,7 +123,7 @@ $ docker build -t standardnotes-extensions .
 		   #
 		   # Custom headers and headers various browsers *should* be OK with but aren't
 		   #
-		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range';
+		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,X-Application-Version,X-SNJS-Version';
 		   #
 		   # Tell client that this pre-flight info is valid for 20 days
 		   #
@@ -135,13 +135,13 @@ $ docker build -t standardnotes-extensions .
 		if ($request_method = 'POST') {
 		   add_header 'Access-Control-Allow-Origin' '*';
 		   add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
-		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range';
+		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,X-Application-Version,X-SNJS-Version';
 		   add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range';
 		}
 		if ($request_method = 'GET') {
 		   add_header 'Access-Control-Allow-Origin' '*';
 		   add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
-		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range';
+		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,X-Application-Version,X-SNJS-Version';
 		   add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range';
 		}
 	}
