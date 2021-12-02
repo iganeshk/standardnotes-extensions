@@ -1,5 +1,5 @@
 ---
-id: org.standardnotes.theme-autobiography
+id: io.github.xthursdayx.theme-autobiography
 npm: sn-theme-autobiography
 github: standardnotes/autobiography-theme
 main: dist/dist.css
