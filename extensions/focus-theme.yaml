@@ -1,5 +1,5 @@
 ---
-id: org.standardnotes.theme-focus
+id: io.github.xthursdayx.theme-focus
 npm: sn-theme-focus
 github: standardnotes/focus-theme
 main: dist/dist.css
