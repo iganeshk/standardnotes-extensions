@@ -1,5 +1,5 @@
 ---
-id: org.standardnotes.autocomplete-tags
+id: io.github.xthursdayx.autocomplete-tags
 npm: sn-folders-component
 github: standardnotes/quick-tags
 main: index.html
