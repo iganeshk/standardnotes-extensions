@@ -1,5 +1,5 @@
 ---
-id: org.standardnotes.fancy-markdown-editor
+id: io.github.xthursdayx.fancy-markdown-editor
 npm: sn-fancy-markdown-editor
 github: standardnotes/math-editor
 main: index.html
