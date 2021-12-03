@@ -1,5 +1,5 @@
 ---
-id: org.standardnotes.token-vault
+id: io.github.xthursdayx.token-vault
 npm: sn-token-vault
 github: standardnotes/token-vault
 main: dist/index.html
