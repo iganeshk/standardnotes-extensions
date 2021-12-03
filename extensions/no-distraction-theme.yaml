@@ -1,5 +1,5 @@
 ---
-id: org.standardnotes.theme-no-distraction
+id: io.github.xthursdayx.theme-no-distraction
 npm: sn-theme-no-distraction
 github: standardnotes/no-distraction-theme
 main: dist/dist.css
