@@ -1,5 +1,5 @@
 ---
-id: org.standardnotes.theme-midnight
+id: io.github.xthursdayx.theme-midnight
 npm: sn-theme-midnight
 github: standardnotes/midnight-theme
 main: dist/dist.css
