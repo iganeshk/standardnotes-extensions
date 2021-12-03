@@ -1,5 +1,5 @@
 ---
-id: org.standardnotes.simple-markdown-editor
+id: io.github.xthursdayx.simple-markdown-editor
 npm: sn-simple-markdown-editor
 github: standardnotes/markdown-basic
 main: dist/index.html
