@@ -1,5 +1,5 @@
 ---
-id: org.standardnotes.vim-editor
+id: io.github.xthursdayx.vim-editor
 npm: sn-vim-editor
 github: standardnotes/vim-editor
 main: index.html
