@@ -1,7 +1,7 @@
 ---
 id: io.github.hkp2k.sn-theme-grey-scale
 github: hkp2k/sn-theme-grey-scale
-main: main.css
+main: dist/dist.css
 
 name: Grey Scale
 content_type: SN|Theme
