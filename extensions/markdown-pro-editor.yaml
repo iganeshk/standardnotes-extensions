@@ -1,5 +1,5 @@
 ---
-id: org.standardnotes.advanced-markdown-editor
+id: io.github.xthursdayx.advanced-markdown-editor
 npm: sn-advanced-markdown-editor
 github: standardnotes/markdown-pro
 main: dist/index.html
