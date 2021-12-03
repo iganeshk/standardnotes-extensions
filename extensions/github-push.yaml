@@ -1,5 +1,5 @@
 ---
-id: org.standardnotes.github-push
+id: io.github.xthursdayx.github-push
 npm: sn-github-push
 github: standardnotes/github-push
 main: index.html
