@@ -1,5 +1,5 @@
 ---
-id: org.standardnotes.standard-sheets
+id: io.github.xthursdayx.standard-sheets
 npm: sn-spreadsheets
 github: standardnotes/secure-spreadsheets
 main: dist/index.html
