@@ -1,5 +1,5 @@
 ---
-id: org.standardnotes.mfa-link
+id: io.github.xthursdayx.mfa-link
 npm: sn-mfa-link
 github: standardnotes/mfa-link
 main: dist/index.html
