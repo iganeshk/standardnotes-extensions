@@ -36,17 +36,18 @@ def get_environment(base_dir):
         domain: https://domain.com/extensions
         stdnotes_extensions_list: standardnotes-extensions-list.txt
     """, Loader=yaml.FullLoader)
+    env_var = {}
     if os.path.isfile(os.path.join(base_dir, ".env")):
         with open(os.path.join(base_dir, ".env")) as temp_env_file:
             env_var = yaml.load(temp_env_file, Loader=yaml.FullLoader)
 
         # if user hasn't updated the env, copy defaults to yaml dictionary
-        for key in temp_env_var:
-            try:
-                if not env_var[key]:
-                    env_var[key] = temp_env_var[key]
-            except KeyError as e:
-                env_var[key] = temp_env_var[key] 
+    for key in temp_env_var:
+        try:
+            if not env_var[key]:
+                env_var[key] = temp_env_var[key]
+        except KeyError as e:
+            env_var[key] = temp_env_var[key]
 
     return env_var
 
@@ -89,43 +90,47 @@ def git_clone_method(ext_yaml, public_path, ext_has_update):
     """
     repo_name = ext_yaml['github'].split('/')[-1]
     repo_dir = os.path.join(public_path, repo_name)
-    run([
-        'git', 'clone', 'https://github.com/{github}.git'.format(**ext_yaml),
-        '--quiet', '{}_tmp'.format(repo_name)
-    ],
-        check=True)
-    ext_last_commit = (run([
-        'git', '--git-dir=' +
-        os.path.join(public_path, '{}_tmp'.format(repo_name), '.git'),
-        'rev-list', '--tags', '--max-count=1'
-    ],
-                           stdout=PIPE,
-                           check=True).stdout.decode('utf-8').replace(
-                               "\n", ""))
-    ext_version = run([
-        'git', '--git-dir',
-        os.path.join(public_path, '{}_tmp'.format(repo_name), '.git'),
-        'describe', '--tags', ext_last_commit
-    ],
-                      stdout=PIPE,
-                      check=True).stdout.decode('utf-8').replace("\n", "")
+    try:
+        run([
+            'git', 'clone', 'https://github.com/{github}.git'.format(**ext_yaml),
+            '--quiet', '{}_tmp'.format(repo_name)
+        ],
+            check=True)
+        ext_last_commit = (run([
+            'git', '--git-dir=' +
+            os.path.join(public_path, '{}_tmp'.format(repo_name), '.git'),
+            'rev-list', '--tags', '--max-count=1'
+        ],
+                               stdout=PIPE,
+                               check=True).stdout.decode('utf-8').replace(
+                                   "\n", ""))
+        ext_version = run([
+            'git', '--git-dir',
+            os.path.join(public_path, '{}_tmp'.format(repo_name), '.git'),
+            'describe', '--tags', ext_last_commit
+        ],
+                          stdout=PIPE,
+                          check=True).stdout.decode('utf-8').replace("\n", "")
 
-    # check if the latest version already exist
-    if not os.path.exists(os.path.join(repo_dir, ext_version)):
-        ext_has_update = True
-        shutil.move(
-            os.path.join(public_path, '{}_tmp'.format(repo_name)),
-            os.path.join(public_path, repo_name, '{}'.format(ext_version)))
-        # Delete .git resource from the directory
-        shutil.rmtree(
-            os.path.join(public_path, repo_name, '{}'.format(ext_version),
-                         '.git'))
-    else:
-        # ext already up-to-date
-        # print('Extension: {} - {} (already up-to-date)'.format(ext_yaml['name'], ext_version))
-        # clean-up
-        shutil.rmtree(os.path.join(public_path, '{}_tmp'.format(repo_name)))
-    return ext_version, ext_has_update
+        # check if the latest version already exist
+        if not os.path.exists(os.path.join(repo_dir, ext_version)):
+            ext_has_update = True
+            shutil.move(
+                os.path.join(public_path, '{}_tmp'.format(repo_name)),
+                os.path.join(public_path, repo_name, '{}'.format(ext_version)))
+            # Delete .git resource from the directory
+            shutil.rmtree(
+                os.path.join(public_path, repo_name, '{}'.format(ext_version),
+                             '.git'))
+        else:
+            # ext already up-to-date
+            # print('Extension: {} - {} (already up-to-date)'.format(ext_yaml['name'], ext_version))
+            # clean-up
+            shutil.rmtree(os.path.join(public_path, '{}_tmp'.format(repo_name)))
+        return ext_version, ext_has_update
+    except Exception as e:
+        print('Skipping: {:38s}\t(github repository not found)'.format(repo_name))
+        return '0.0', False
 
 
 def parse_extensions(base_dir, extensions_dir, public_dir, base_url, stdnotes_ext_list_path, ghub_headers):
@@ -279,8 +284,9 @@ def main():
     """
     base_dir = os.path.dirname(os.path.abspath(__file__))
     # Get environment variables
+    env_var = {}
     env_var = get_environment(base_dir)
-    base_url = env_var['domain']
+    base_url = env_var["domain"]
     extensions_dir = env_var['extensions_dir']
     if os.path.exists(os.path.join(base_dir, extensions_dir)):
         extensions_dir = os.path.join(base_dir, extensions_dir)
@@ -321,7 +327,7 @@ def main():
             "Environment variables not set (have a look at env.sample). Using git-clone method instead"
         )
         input(
-            "⚠️ WARNING: This is an in-efficient process, press any key to go ahead anyway:\n")
+            "⚠️ WARNING: This is an in-efficient process\nPress any key to go ahead anyway: ")
 
     # Build extensions
     parse_extensions(base_dir, extensions_dir, public_dir, base_url, stdnotes_ext_list_path, ghub_headers)

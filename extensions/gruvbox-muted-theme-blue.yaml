@@ -1,6 +1,6 @@
 ---
 id: io.github.bithooks.sn-gruvbox-muted-theme-blue
-github: bithooks/sn-gruvbox-muted-theme/
+github: bithooks/sn-gruvbox-muted-theme
 main: blue/dist/dist.css
 
 name: Gruvbox Muted Theme Blue
