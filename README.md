@@ -24,8 +24,13 @@ $ git clone https://github.com/iganeshk/standardnotes-extensions.git
 $ cd standardnotes-extensions
 $ pip3 install -r requirements.txt
 ```
+* Visit the following link to generate a personal access token:
+```
+$ https://github.com/settings/tokens
+```
+![Github Personal Access Token](../assets/github_personal_token.png?raw=true)
 
-* Use the env.sample to create a .env file for your environment variables. The utility will automatically load these when it starts.
+* Use the env.sample to create a .env file for your environment variables and make sure you have placed your personal access token in the "token" attribute
 
 ```
 # Sample ENV setup Variables (YAML)
@@ -123,7 +128,7 @@ $ docker build -t standardnotes-extensions .
 		   #
 		   # Custom headers and headers various browsers *should* be OK with but aren't
 		   #
-		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,X-Application-Version,X-SNJS-Version';
+		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range';
 		   #
 		   # Tell client that this pre-flight info is valid for 20 days
 		   #
@@ -135,13 +140,13 @@ $ docker build -t standardnotes-extensions .
 		if ($request_method = 'POST') {
 		   add_header 'Access-Control-Allow-Origin' '*';
 		   add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
-		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,X-Application-Version,X-SNJS-Version';
+		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range';
 		   add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range';
 		}
 		if ($request_method = 'GET') {
 		   add_header 'Access-Control-Allow-Origin' '*';
 		   add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
-		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,X-Application-Version,X-SNJS-Version';
+		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range';
 		   add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range';
 		}
 	}
