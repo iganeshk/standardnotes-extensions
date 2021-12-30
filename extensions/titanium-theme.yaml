@@ -1,5 +1,5 @@
 ---
-id: io.github.xthursdayx.theme-titanium
+id: org.standardnotes.theme-titanium
 npm: sn-theme-titanium
 github: standardnotes/titanium-theme
 main: dist/dist.css

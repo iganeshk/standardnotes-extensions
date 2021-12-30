@@ -1,5 +1,5 @@
 ---
-id: io.github.xthursdayx.plus-editor
+id: org.standardnotes.plus-editor
 npm: sn-plus-editor
 github: standardnotes/plus-editor
 main: dist/index.html

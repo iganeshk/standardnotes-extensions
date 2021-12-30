@@ -1,5 +1,5 @@
 ---
-id: io.github.xthursdayx.folders-component
+id: org.standardnotes.folders-component
 npm: sn-folders
 github: standardnotes/folders-component
 main: index.html

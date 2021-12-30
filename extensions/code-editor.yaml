@@ -1,5 +1,5 @@
 ---
-id: io.github.xthursdayx.code-editor
+id: org.standardnotes.code-editor
 npm: sn-code-editor
 github: standardnotes/code-editor
 main: index.html

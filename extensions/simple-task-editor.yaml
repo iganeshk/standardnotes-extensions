@@ -1,5 +1,5 @@
 ---
-id: io.github.xthursdayx.simple-task-editor
+id: org.standardnotes.simple-task-editor
 npm: sn-simple-task-editor
 github: standardnotes/simple-task-editor
 main: dist/index.html

@@ -1,5 +1,5 @@
 ---
-id: io.github.xthursdayx.theme-futura
+id: org.standardnotes.theme-futura
 npm: sn-futura-theme
 github: standardnotes/futura-theme
 main: dist/dist.css

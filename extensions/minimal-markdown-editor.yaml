@@ -1,5 +1,5 @@
 ---
-id: io.github.xthursdayx.minimal-markdown-editor
+id: org.standardnotes.minimal-markdown-editor
 npm: sn-minimal-markdown-editor
 github: standardnotes/minimal-markdown-editor
 main: index.html

@@ -1,5 +1,5 @@
 ---
-id: io.github.xthursdayx.bold-editor
+id: org.standardnotes.bold-editor
 npm: sn-bold-editor
 github: standardnotes/bold-editor
 main: dist/index.html
