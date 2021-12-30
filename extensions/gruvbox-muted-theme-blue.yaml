@@ -1,14 +1,6 @@
 ---
-<<<<<<< HEAD
 id: io.github.xthursdayx.sn-gruvbox-muted-theme-blue
 github: xthursdayx/sn-gruvbox-muted-theme
-||||||| a44c07e
-id: io.github.bithooks.sn-gruvbox-muted-theme-blue
-github: bithooks/sn-gruvbox-muted-theme/
-=======
-id: io.github.bithooks.sn-gruvbox-muted-theme-blue
-github: bithooks/sn-gruvbox-muted-theme
->>>>>>> iganeshk-master
 main: blue/dist/dist.css
 
 name: Gruvbox Muted Theme Blue
