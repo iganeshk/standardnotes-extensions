@@ -1,5 +1,5 @@
 ---
-id: <io.github.organization.extension>
+id: <tld.domain.organization.extension-name>
 github: <organization/repository>
 main: <index.html>
 
