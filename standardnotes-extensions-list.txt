@@ -7,12 +7,11 @@ autobiography-theme.yaml
 autocomplete-tags.yaml
 bold-editor.yaml
 code-editor.yaml
+dynamic-theme.yaml
 focus-theme.yaml
 folders-component.yaml
 futura-theme.yaml
 github-push.yaml
-grey-scale-theme.yaml
-gruvbox-muted-theme-blue.yaml
 markdown-basic.yaml
 markdown-pro-editor.yaml
 math-editor.yaml
@@ -23,10 +22,6 @@ no-distraction-theme.yaml
 plus-editor.yaml
 secure-spreadsheets.yaml
 simple-task-editor.yaml
-slate-theme.yaml
-standard-gray-theme.yaml
-subtle-dark-theme.yaml
-subtle-light-theme.yaml
 titanium-theme.yaml
 token-vault.yaml
 vim-editor.yaml
