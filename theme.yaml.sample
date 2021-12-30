@@ -1,0 +1,20 @@
+---
+id: <tld.domain.organization.theme-name>
+github: <organization/repository>
+main: <dist/dist.css>
+
+name: <Theme_Name>
+content_type: SN|Theme
+area: themes
+version: <0.0.1>
+marketing_url: <https://github.com/organization/theme>
+thumbnail_url: <https://raw.githubusercontent.com/organization/theme/master/thumbnail.png>
+description: <Description of theme>
+
+statusBar: dark-content
+dock_icon:
+  type: circle
+  background_color: '#726a7b' #your chosen icon background color
+  foreground_color: '#ffffff' #your chosen icon foreground color
+  border_color: '#726a7b' #your chosen icon border color
+...
