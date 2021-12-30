@@ -3,7 +3,7 @@ id: tech.gunderson.sn-theme-subtle-dark
 github: Parkertg/sn-theme-subtle-dark
 main: dist/dist.css
 
-name: Subtle Light
+name: Subtle Dark
 content_type: SN|Theme
 area: themes
 version: 1.1
