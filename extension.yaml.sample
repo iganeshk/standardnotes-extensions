@@ -1,0 +1,14 @@
+---
+id: <tld.domain.organization.extension-name>
+github: <organization/repository>
+main: <index.html>
+
+name: <Extension_Name>
+content_type: SN|Component
+area: editor-stack
+version: <0.0.1>
+marketing_url: <https://github.com/organization/extension>
+thumbnail_url: < https://raw.githubusercontent.com/organization/extension/master/thumbnail.png>
+description: <Description of extension>
+flags: []
+...

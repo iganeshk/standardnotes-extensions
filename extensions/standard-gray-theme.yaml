@@ -7,7 +7,7 @@ name: Standard Gray
 content_type: SN|Theme
 area: themes
 version: 1.0.1
-marketing_url: https://github.com/hkp2k/sn-theme-grey-scale
+marketing_url: https://github.com/ithinkmatt/sn-standard-gray
 description: Standard gray (and blue) theme for Standard Notes.
 
 statusBar: grey-scale

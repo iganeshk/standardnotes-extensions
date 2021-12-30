@@ -1,14 +1,14 @@
 ---
-id: io.github.bithooks.sn-gruvbox-muted-theme-blue
-github: bithooks/sn-gruvbox-muted-theme
+id: io.github.xthursdayx.sn-gruvbox-muted-theme-blue
+github: xthursdayx/sn-gruvbox-muted-theme
 main: blue/dist/dist.css
 
 name: Gruvbox Muted Theme Blue
 content_type: SN|Theme
 area: themes
-version: v0.0.01
-marketing_url: https://github.com/bithooks/sn-gruvbox-muted-theme/
-thumbnail_url: https://raw.githubusercontent.com/bithooks/sn-gruvbox-muted-theme/main/blue/blue-screenshot.png
+version: 0.0.1
+marketing_url: https://github.com/xthursdayx/sn-gruvbox-muted-theme/
+thumbnail_url: https://raw.githubusercontent.com/xthursdayx/sn-gruvbox-muted-theme/main/blue/blue-screenshot.png
 description: Gruvbox Blue Muted Theme for Standard Notes.
 
 statusBar: dark-content

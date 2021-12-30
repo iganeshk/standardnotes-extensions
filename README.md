@@ -1,9 +1,9 @@
 ![Standard Notes Extension Repository](../assets/standardnotes.png?raw=true)
 
 ## Standard Notes Extensions - Self-Hosted Repository
-Host Standard Notes extensions on your own server. This utility parses most of the open-source extensions available from original repository as well as from other authors and builds an extensions repository which then can be plugged directly into Standard Notes Web/Desktop Clients. (https://standardnotes.org/)
+Host Standard Notes extensions on your own server. This utility parses most of the open-source extensions available from the Standard Notes team as well as a range of extensions created by the wider Standard Notes community to build an extensions repository which can then be plugged directly into Standard Notes Web/Desktop Clients. (https://standardnotes.org/)
 
-Extensions are listed as YAML in the `\extensions` sub-directory, pull a request if you'd like to add yours.
+Extensions are listed as `YAML` in the `/extensions` sub-directory, pull a request if you'd like to add yours.
 
 ### Requirements
 * Python 3
@@ -17,8 +17,7 @@ Extensions are listed as YAML in the `\extensions` sub-directory, pull a request
 
 ### Usage
 
-* Clone this repository to the web-server:
-
+* Clone this repository to your web-server:
 ```bash
 $ git clone https://github.com/iganeshk/standardnotes-extensions.git
 $ cd standardnotes-extensions
@@ -30,7 +29,7 @@ $ https://github.com/settings/tokens
 ```
 ![Github Personal Access Token](../assets/github_personal_token.png?raw=true)
 
-* Use the env.sample to create a .env file for your environment variables and make sure you have placed your personal access token in the "token" attribute
+* Use the provided [`env.sample`](../env.sample) to create a `.env` file for your environment variables and including your Github personal access token.
 
 ```
 # Sample ENV setup Variables (YAML)
@@ -52,35 +51,36 @@ github:
 
 ```
 
-* [Optional] Make additions or appropriate changes in `/extensions` directory.
+* [Optional] Add more extensions to the `/extensions` directory, using the `YAML` sample templates for [extensions](../extension.yaml.sample) or [themes](../theme.yaml.sample), or modify any existing extensions.
 * Run the utility:
 
 ```bash
 $ python3 build_repo.py
 ```
-* Serve the `/public` directory and verify if the endpoint is reachable.
+* Serve the `/public` directory and verify that the endpoint is reachable.
 
 ```
 https://your-domain.com/extensions/index.json
 ```
-* Import the above endpoint into the web/desktop client. (Note: Enable CORS for your web server respectively, nginx setup provided below)
+* Import the `latest url` for each extension you want to add (for example: `https://your-domaim.com/extensions/bold-editor/index.json`) into the Standard Notes Web Desktop client under the `General` > `Advanced Settings` > `Install Custom Extension` menu. (Note: Enable CORS for your web server respectively, nginx setup provided below)
 
 ### Docker
 
-* To via Docker, clone the repository, set up the .env file, and optionally modify the `extensions` directory, following the instructions above.
-* Then pull and run run the container, specifying the mount points for the `.env` file, the `extensions` directory, and the `public` directory, where the output will be placed:
+* To run via Docker, clone this repository, create your `.env` file using the provided `env.sample`, and optionally add any additional extensions to the `/extensions` directory, following the instructions above.
+* Then pull and run the container, specifying the mount points for the `.env` file, the `extensions` directory, and the `public` directory, where the self-hosted extensions will be placed:
 
 ```bash
 $ docker run \
   -v $PWD/.env:/build/.env \
   -v $PWD/extensions:/build/extensions \
   -v $PWD/public:/build/public \
+  -v $PWD/standardnotes-extensions-list.txt:/build/standardnotes-extensions-list.txt \
   iganesh/standardnotes-extensions
 ```
 
 #### Docker Compose
 
-If you would like to use the container with docker-compose, the exact setup will be somewhat specific to your configuration, however the following snippet may be helpful, assuming you have cloned this repository in your `$HOME` directory and followed the instructions regarding the .env file and `extensions` directory:
+If you would like to use the container with docker-compose, the exact setup will be somewhat specific to your configuration, however the following snippet may be helpful, assuming you have cloned this repository in your `$HOME` directory and followed the instructions regarding the `.env` file and `/extensions` directory:
 
 ```yaml
 version: '3.3'
@@ -96,6 +96,7 @@ services:
     volumes:
       - $HOME/standardnotes-extensions/.env:/build/.env
       - $HOME/standardnotes-extensions/extensions:/build/extensions
+      - $HOME/standardnotes-extensions/standardnotes-extensions-list.txt:/build/standardnotes-extensions-list.txt
       - standardnotes-extensions:/build/public
 
 volumes:
@@ -112,7 +113,7 @@ Also, please note that the configuration snippet above is in no way a complete s
 If you need to build the container, clone this repository, `cd` into it, and run the following command:
 
 ```bash
-$ docker build -t standardnotes-extensions .
+$ docker build --no-cache -t standardnotes-extensions:local .
 ```
 
 ### Setup with nginx
@@ -128,7 +129,7 @@ $ docker build -t standardnotes-extensions .
 		   #
 		   # Custom headers and headers various browsers *should* be OK with but aren't
 		   #
-		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range';
+		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,X-Application-Version,X-SNJS-Version';
 		   #
 		   # Tell client that this pre-flight info is valid for 20 days
 		   #
@@ -140,13 +141,13 @@ $ docker build -t standardnotes-extensions .
 		if ($request_method = 'POST') {
 		   add_header 'Access-Control-Allow-Origin' '*';
 		   add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
-		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range';
+		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,X-Application-Version,X-SNJS-Version';
 		   add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range';
 		}
 		if ($request_method = 'GET') {
 		   add_header 'Access-Control-Allow-Origin' '*';
 		   add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
-		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range';
+		   add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,X-Application-Version,X-SNJS-Version';
 		   add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range';
 		}
 	}
@@ -156,4 +157,3 @@ $ docker build -t standardnotes-extensions .
 * This project was adapted originally from https://github.com/JokerQyou/snextensions
 * Check out https://github.com/jonhadfield/awesome-standard-notes for more Standard Notes stuff!
 * Authors of custom themes and extensions
-
