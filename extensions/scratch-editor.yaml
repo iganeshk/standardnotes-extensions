@@ -1,0 +1,14 @@
+---
+id: com.dylanonelson.sn-scratch-editor
+github: dylanonelson/sn-scratch-editor
+main: dist/index.html
+
+name: Scratch Editor
+content_type: SN|Component
+area: editor-editor
+version: 0.0.41
+marketing_url: https://dylanonelson.github.io/sn-scratch-editor
+thumbnail_url:
+description: An editor for writing things down.
+flags: []
+...

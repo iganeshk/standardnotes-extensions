@@ -1,0 +1,14 @@
+---
+id: dev.maxlap.indent_editor
+github: MaxLap/standard-notes-indent-editor
+main: index.html
+
+name: Indent Editor
+content_type: SN|Component
+area: editor-editor
+version: 1.6.0
+marketing_url: https://github.com/MaxLap/standard-notes-indent-editor
+thumbnail_url:
+description: A plain text editor with improved usability and readability.
+flags: []
+...
