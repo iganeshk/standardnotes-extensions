@@ -22,6 +22,7 @@ no-distraction-theme.yaml
 plus-editor.yaml
 secure-spreadsheets.yaml
 simple-task-editor.yaml
+solarized-dark-theme.yaml
 titanium-theme.yaml
 token-vault.yaml
 vim-editor.yaml

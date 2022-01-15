@@ -1,0 +1,14 @@
+---
+id: com.append-editor.beta
+github: TheodoreChu/append-editor
+main: public/index.html
+
+name: Append Editor - Beta
+content_type: SN|Component
+area: editor-editor
+version: 1.2.6
+marketing_url: https://appendeditor.com
+thumbnail_url: 
+description: Append to your notes.
+flags: []
+...

@@ -1,14 +1,14 @@
 ---
-id: io.github.tonyping.dark-hybrid-theme-sn
-github: tonyping/dark-hybrid-theme-sn
+id: io.github.xthursdayx.dark-hybrid-theme-sn
+github: xthursdayx/dark-hybrid-theme-sn
 main: dist/dist.css
 
 name: Dark Hybrid
 content_type: SN|Theme
 area: themes
 version: v1.2
-marketing_url: https://github.com/tonyping/dark-hybrid-theme-sn
-thumbnail_url: https://raw.githubusercontent.com/tonyping/dark-hybrid-theme-sn/master/preview.png
+marketing_url: https://github.com/xthursdayx/dark-hybrid-theme-sn
+thumbnail_url: https://raw.githubusercontent.com/xthursdayx/dark-hybrid-theme-sn/master/preview.png
 description: Dark Hybrid Theme Extension for Standard Notes.
 
 statusBar: dark-content
