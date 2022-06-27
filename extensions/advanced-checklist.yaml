@@ -1,7 +1,7 @@
 ---
 id: org.standardnotes.advanced-checklist
 npm: sn-advanced-checklist
-github: standardnotes/advanced-checklist
+github: xthursdayx/advanced-checklist
 main: public/index.html
 
 name: Advanced Checklist
