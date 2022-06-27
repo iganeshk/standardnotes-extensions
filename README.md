@@ -64,7 +64,7 @@ https://your-domain.com/extensions/index.json
 ```
 * Import the `latest url` for each extension you want to add (for example: `https://your-domaim.com/extensions/bold-editor/index.json`) into the Standard Notes Web Desktop client under the `General` > `Advanced Settings` > `Install Custom Extension` menu. (Note: Enable CORS for your web server respectively, nginx setup provided below)
 
-* If you are self-hosting Standard Notes Server (aka [Standard Notes Standalone](https://github.com/standardnotes/standalone), you may need to add a "subscription" to your self-hosted user account in order to avoid any problems accessing official Standard Notes extensions. 
+* If you are self-hosting Standard Notes Server (aka [Standard Notes Standalone](https://github.com/standardnotes/standalone)), you may need to add a "subscription" to your self-hosted user account in order to avoid any problems accessing official Standard Notes extensions. 
 * To add a subscription to your self-hosted user account, run the following commands (Replace EMAIL@ADDR with your user email) from within your standalone directory:
 `./server.sh create-subscription EMAIL@ADDR`
 
