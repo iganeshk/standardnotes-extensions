@@ -1,0 +1,15 @@
+---
+id: org.standardnotes.markdown-visual
+npm: sn-markdown-visual
+github: standardnotes/markdown-visual
+main: public/index.html
+
+name: Markdown Visual Editor
+content_type: SN|Component
+area: editor-editor
+version: 1.0.0
+marketing_url: https://standardnotes.org/extensions/markdown-visual
+thumbnail_url:
+description: A lightweight WYSIWYG markdown editor, derivated from Milkdown editor.
+flags: []
+...

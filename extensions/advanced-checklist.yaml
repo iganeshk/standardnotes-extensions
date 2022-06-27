@@ -1,0 +1,15 @@
+---
+id: org.standardnotes.advanced-checklist
+npm: sn-advanced-checklist
+github: standardnotes/advanced-checklist
+main: dist/index.html
+
+name: Simple Markdown Editor
+content_type: SN|Component
+area: editor-editor
+version: 0.1.0
+marketing_url: https://github.com/standardnotes/advanced-checklist
+thumbnail_url:
+description: A task editor with grouping functionality.
+flags: []
+...
