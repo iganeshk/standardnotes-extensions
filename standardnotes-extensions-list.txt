@@ -2,6 +2,7 @@
 # List of standard notes's extensions who's identifier need to be modified to
 # get around the issue: https://github.com/standardnotes/desktop/issues/789
 #############################################################################
+advanced-checklist.yaml
 action-bar.yaml
 autobiography-theme.yaml
 autocomplete-tags.yaml
@@ -14,6 +15,7 @@ futura-theme.yaml
 github-push.yaml
 markdown-basic.yaml
 markdown-pro-editor.yaml
+markdown-visual.yaml
 math-editor.yaml
 mfa-link.yaml
 midnight-theme.yaml
