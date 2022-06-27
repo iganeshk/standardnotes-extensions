@@ -7,7 +7,7 @@ main: public/index.html
 name: Advanced Checklist
 content_type: SN|Component
 area: editor-editor
-version: 0.1.0
+version: 0.0.1
 marketing_url: https://github.com/standardnotes/advanced-checklist
 thumbnail_url:
 description: A task editor with grouping functionality.
