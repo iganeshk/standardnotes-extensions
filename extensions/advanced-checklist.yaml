@@ -4,7 +4,7 @@ npm: sn-advanced-checklist
 github: standardnotes/advanced-checklist
 main: dist/index.html
 
-name: Simple Markdown Editor
+name: Advanced Checklist
 content_type: SN|Component
 area: editor-editor
 version: 0.1.0
