@@ -1,3 +1,10 @@
+<div align="center">archived.</div>
+<hr/>
+
+Project has been archived and will no longer be maintained. I've decided to move away from standard notes due to both Standard Notes's business and architectural model for self-hosted users.
+
+<hr/>
+
 ![Standard Notes Extension Repository](../assets/standardnotes.png?raw=true)
 
 ## Standard Notes Extensions - Self-Hosted Repository
